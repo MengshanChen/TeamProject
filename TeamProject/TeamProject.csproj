@@ -202,7 +202,7 @@
     <Content Include="Content\Images\game info\boardlevel2.png" />
     <Content Include="Content\Images\game info\boardlevel3.png" />
     <Content Include="Content\Images\game info\game info picture.png" />
-    <Content Include="Content\Images\game info\game message.png" />
+    <Content Include="Content\Images\game info\gamemessage.png" />
     <Content Include="Content\Images\girl06.jpg" />
     <Content Include="Content\Images\girl1.jpg" />
     <Content Include="Content\Images\girl6.jpg" />
