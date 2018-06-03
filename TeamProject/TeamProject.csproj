@@ -223,6 +223,7 @@
     <Content Include="Content\Images\museum2.jpg" />
     <Content Include="Content\Images\needle.jpg" />
     <Content Include="Content\Images\Olivia.jpg" />
+    <Content Include="Content\Images\prizedex.jpg" />
     <Content Include="Content\Images\prizedex\1.png" />
     <Content Include="Content\Images\prizedex\2.png" />
     <Content Include="Content\Images\prizedex\3.png" />
@@ -255,7 +256,6 @@
     <Content Include="Content\Images\WorldTour\junior.png" />
     <Content Include="Content\Images\WorldTour\low end.png" />
     <Content Include="Content\Images\WorldTour\mid-end.png" />
-    <Content Include="Content\Images\prize dex.jpg" />
     <Content Include="Content\Images\prize tomb with text - 2.png" />
     <Content Include="Content\Images\WorldTour\senior.png" />
     <Content Include="Content\Pages\Admin Profile.png" />
