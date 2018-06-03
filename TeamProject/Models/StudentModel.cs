@@ -81,6 +81,10 @@ namespace TeamProject.Models
             Initialize();
         }
 
+        /// <summary>
+        /// Constructor for Student. Call this when recover student from archive
+        /// </summary>
+        /// <param name="data"> Archive data to use</param>
         public StudentModel(ArchiveModel data)
         {
             Id = data.Id;
