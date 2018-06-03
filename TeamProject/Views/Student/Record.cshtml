@@ -15,31 +15,22 @@
 <style class="cp-pen-styles"></style>
 
 
-<div class="container" style="float:left; margin-top:3%;">
+<div class="report-style">
     <div class="row searchFilter">
         <div class="col-sm-10">
-            <div class="input-group">
-                @*<input id="table_filter" type="text" class="form-control" aria-label="Text input with segmented button dropdown">*@               
-                
-                <div id="reportrange" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 130%; margin-top:5px;">
-                    <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
-                    <span></span> <b class="caret"></b>
-                </div>
-                <br />
-                <button id="searchBtn" type="button" class="btn btn-secondary btn-search" style="background-color: #f8632f;"><span class="glyphicon glyphicon-search">&nbsp;</span> <span class="label-icon">Enter</span></button>
-                <br />
-                
+            <div id="reportrange" class="report-calendar">
+                <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                <span></span> <b class="caret"></b>
             </div>
+            <br />
+            <button id="searchBtn" type="button" class="btn btn-secondary btn-search orange-background"><span class="glyphicon glyphicon-search">&nbsp;</span> <span class="label-icon">Enter</span></button>
+            <br />
         </div>
     </div>
 </div>
 
 
-<p>
-
-    <img src="~/Content/Images/record chart.png" style="width:800px; height:542px; margin-top: 120px; align-content:center">
-
-</p>
+<p><img src="~/Content/Images/record chart.png" class="studentrecord"></p>
 
 <script src='//static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js'></script>

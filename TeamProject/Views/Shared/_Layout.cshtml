@@ -15,7 +15,7 @@
         <center>
             <footer>
                 <div class="footer">
-                    <div style="background-color:transparent">
+                    <div class="color-transparent">
                         &nbsp;&nbsp;Copyrights &copy; @DateTime.Now.Year U-High Team All rights reserved
                         &nbsp;&nbsp;
                         @Html.ActionLink("About", "About", "Home", new { controller = "Home" }, new { @class = "btn btn-link" })
@@ -31,13 +31,3 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
-
-<style>
-    .btn-link {
-        color: #083e52;
-    }
-
-    body {
-        color: #083e52;
-    }
-</style>
