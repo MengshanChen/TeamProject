@@ -4,60 +4,14 @@
     Layout = "~/Views/Shared/_StudentLayout.cshtml";
     ViewBag.Title = "Profile";
 }
-<style>
-    body {
-        /* Background image is centered vertically and horizontally at all times */
-        background-position: center center;
-        /* Background image doesn't tile */
-        background-repeat: no-repeat;
-        /* Background image is fixed in the viewport so that it doesn't move when
-        the content's height is greater than the image's height */
-        background-attachment: fixed;
-        /* This is what makes the background image rescale based
-        on the container's size */
-        background-size: cover;
-        /* Set a background color that will be displayed
-        while the background image is loading */
-        background-color: whitesmoke;
-    }
 
-hr {
-    border: none;
-}
-</style>
-<style>
-    .container1 {
-        position: relative;
-        width: 100%;
-    }
 
-        .container1 img {
-            width: 100%;
-            height: auto;
-        }
-
-        .container1 .btn-1 {
-            position: absolute;
-            top: 73%;
-            left: 69%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            background-color: #f8632f;
-            color: white;
-            font-size: 16px;
-            padding: 16px 40px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            text-align: center;
-        }
-</style>
-
-<center>
-    <div class="container1">
-        <br /><br /><br /><br />
-        <img src="~/Content/Images/Student Profile/student profile final.png" alr="Profile" />
-        @Html.ActionLink("RESET PASSWORD", "UpdatePassword", null, new { controller = "Home" }, new { @class = "btn-1" })
-    </div>
-</center>
-
+<body class="profile-background">
+    <center>
+        <div class="profile">
+            <br /><br /><br /><br />
+            <img src="~/Content/Images/Student Profile/student profile final.png" alr="Profile" />
+            @Html.ActionLink("RESET PASSWORD", "UpdatePassword", null, new { controller = "Home" }, new { @class = "btn-1 orange-background" })
+        </div>
+    </center>
+</body>

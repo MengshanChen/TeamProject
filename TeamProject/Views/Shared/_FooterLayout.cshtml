@@ -8,7 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top blue-background">
         <div class="">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -28,7 +28,7 @@
         <center>
             <footer>
                 <div class="footer">
-                    <div style="background-color:transparent">
+                    <div class="color-transparent">
                         &nbsp;&nbsp;Copyrights &copy; @DateTime.Now.Year U-High Team All rights reserved
                         &nbsp;&nbsp;
                         @Html.ActionLink("About", "About", "Home", new { controller = "Home" }, new { @class = "btn btn-link" })
@@ -46,13 +46,3 @@
 </body>
 </html>
 
-<style>
-    .btn-link {
-        color: #083e52;
-    }
-
-    body {
-        color: #083e52;
-    }
-
-</style>

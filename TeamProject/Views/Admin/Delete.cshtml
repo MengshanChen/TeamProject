@@ -7,39 +7,39 @@
 <div class="container">
     <div class="row">
         @{
-            if (Model == null)
-            {
-                <p>No Student</p>
-            }
-            else
-            {
+        if (Model == null)
+        {
+        <p>No Student</p>
+        }
+        else
+        {
+        <div class="row">
+            <h2>Delete Student</h2><br /><br />
+            <center>
                 <div class="row">
-                    <h2>Delete Student</h2><br /><br />
-                    <center>
-                        <div class="row">
-                            <img src="~/Content/Images/@Model.PictureUri" width="300" height="300" /><br />
-                            <span style="font-size:xx-large">
-                                @Model.Name<br /><br /><br />
-                            </span>
-                        </div>
-                    </center>
-                    @using (Html.BeginForm())
-                    {
-                        @Html.AntiForgeryToken()
-                        @Html.HiddenFor(m => m.Id)
-                        @Html.HiddenFor(m => m.Name)
-                        @Html.HiddenFor(m => m.LastName)
-                        @Html.HiddenFor(m => m.Email)
-                        @Html.HiddenFor(m => m.PictureId)
-                        <center>
-                            <div class="row">
-                                @Html.ActionLink("Cancel", "Students", new { id = Model.Id }, new { @class = "btn btn-success btn-lg active" })
-                                <input type="submit" value="Delete" class="btn btn-danger btn-lg active">
-                            </div>
-                        </center>
-                    }
+                    <img src="~/Content/Images/@Model.PictureUri" width="300" height="300" /><br />
+                    <span style="font-size:xx-large">
+                        @Model.Name<br /><br /><br />
+                    </span>
                 </div>
+            </center>
+            @using (Html.BeginForm())
+            {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(m => m.Id)
+            @Html.HiddenFor(m => m.Name)
+            @Html.HiddenFor(m => m.LastName)
+            @Html.HiddenFor(m => m.Email)
+            @Html.HiddenFor(m => m.PictureId)
+            <center>
+                <div class="row">
+                    @Html.ActionLink("Cancel", "Students", new { id = Model.Id }, new { @class = "btn btn-success btn-lg active" })
+                    <input type="submit" value="Delete" class="btn btn-danger btn-lg active">
+                </div>
+            </center>
             }
+        </div>
+        }
         }
     </div>
 </div>

@@ -5,140 +5,82 @@
 }
 
 
-@* CSS for Overwrite Customizations by Date *@
-<style type="text/css">
-    body {
-        padding: 50px;
-        margin: 30px;
-    }
+<body class="overwritedata-style">
+    <h2>Overwrite Student Attendance Data</h2>
 
-    table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-    }
-
-    td, th {
-        border: 1px solid #dddddd;
-        text-align: center;
-        padding: 8px;
-    }
-
-    tr:nth-child(even) {
-        background-color: #dddddd;
-    }
-</style>
-
-
-
-<h2>Overwrite Student Attendance Data</h2>
-
-@* Override for Attendance Information *@
-<div>
+    @* Override for Attendance Information *@
     <div>
-        <form method="get" action="/Admin/Overwritedatabyname" id="search" style="float:right">
-            <input name="q" type="text" size="40" placeholder="Search..." />
-        </form>
+        <div>
+            <form method="get" action="/Admin/Overwritedatabyname" id="search" class="float-right">
+                <input name="q" type="text" size="40" placeholder="Search..." />
+            </form>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div class="overwrite-margin">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Check-in time</th>
+                    <th>Check-out time</th>
+                    <th>Time in school</th>
+                </tr>
+                <tr>
+                    <td>Joe</td>
+                    <td>5/1/2018</td>
+                    <td>9:00</td>
+                    <td>3:00</td>
+                    <td>6H</td>
+                </tr>
+                <tr>
+                    <td>Olivia</td>
+                    <td>5/1/2018</td>
+                    <td>8:37</td>
+                    <td>3:37</td>
+                    <td>7H</td>
+                </tr>
+                <tr>
+                    <td>Erica</td>
+                    <td>5/1/2018</td>
+                    <td>10:24</td>
+                    <td>3:27</td>
+                    <td>5H 3Min</td>
+                </tr>
+                <tr>
+                    <td>Helena</td>
+                    <td>5/1/2018</td>
+                    <td>9:10</td>
+                    <td>3:10</td>
+                    <td>6H</td>
+                </tr>
+                <tr>
+                    <td>Daniel</td>
+                    <td>5/1/2018</td>
+                    <td>11:00</td>
+                    <td>3:00</td>
+                    <td>4H</td>
+                </tr>
+                <tr>
+                    <td>Victor</td>
+                    <td>5/1/2018</td>
+                    <td>9:12</td>
+                    <td>3:20</td>
+                    <td>6H 8Min</td>
+                </tr>
+                <tr>
+                    <td>Kyle</td>
+                    <td>5/1/2018</td>
+                    <td>8:57</td>
+                    <td>3:10</td>
+                    <td>8H 13Min</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <button class="btn btn-success overwritedata-button overwrite-button1" id="shaker">Edit</button>
+            <button class="btn btn-primary overwritedata-button overwrite-button2" id="shaker">Add record</button>
+        </div>
     </div>
-    <div>
-        <br>
-    </div>
-    <div style="margin-top:50px;">
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Date</th>
-                <th>Check-in time</th>
-                <th>Check-out time</th>
-                <th>Time in school</th>
-            </tr>
-            <tr>
-                <td>Joe</td>
-                <td>5/1/2018</td>
-                <td>9:00</td>
-                <td>3:00</td>
-                <td>6H</td>
-            </tr>
-            <tr>
-                <td>Olivia</td>
-                <td>5/1/2018</td>
-                <td>8:37</td>
-                <td>3:37</td>
-                <td>7H</td>
-            </tr>
-            <tr>
-                <td>Erica</td>
-                <td>5/1/2018</td>
-                <td>10:24</td>
-                <td>3:27</td>
-                <td>5H 3Min</td>
-            </tr>
-            <tr>
-                <td>Helena</td>
-                <td>5/1/2018</td>
-                <td>9:10</td>
-                <td>3:10</td>
-                <td>6H</td>
-            </tr>
-            <tr>
-                <td>Daniel</td>
-                <td>5/1/2018</td>
-                <td>11:00</td>
-                <td>3:00</td>
-                <td>4H</td>
-            </tr>
-            <tr>
-                <td>Victor</td>
-                <td>5/1/2018</td>
-                <td>9:12</td>
-                <td>3:20</td>
-                <td>6H 8Min</td>
-            </tr>
-            <tr>
-                <td>Kyle</td>
-                <td>5/1/2018</td>
-                <td>8:57</td>
-                <td>3:10</td>
-                <td>8H 13Min</td>
-            </tr>
-        </table>
-    </div>
-    <div>
-        <button class="btn btn-primary" id="shaker" style="float:right ;margin-right:40px; margin-top:20px">Edit</button>
-        <button class="btn btn-success" id="shaker" style="float:right ;margin-right:20px; margin-top:20px">Add record</button>
-
-    </div>
-</div>
-
-
-
-
-@* CSS style for the Search Function *@
-<style>
-    #search {
-    }
-
-        #search input[type="text"] {
-            background: url(search-white.png) no-repeat 10px 6px #fcfcfc;
-            border: 1px solid #d1d1d1;
-            font: bold 12px Arial,Helvetica,Sans-serif;
-            color: #bebebe;
-            width: 150px;
-            padding: 6px 15px 6px 35px;
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            border-radius: 20px;
-            text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
-            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
-            -webkit-transition: all 0.7s ease 0s;
-            -moz-transition: all 0.7s ease 0s;
-            -o-transition: all 0.7s ease 0s;
-            transition: all 0.7s ease 0s;
-        }
-
-            #search input[type="text"]:focus {
-                width: 200px;
-            }
-</style>
+</body>

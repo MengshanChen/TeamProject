@@ -26,19 +26,19 @@
                     <div class="col-sm-12">
                         <div class="col-sm-4" text-left></div>
                         <div class="col-sm-8">
-                            <div class="row" style="font-family:Calibri;font-size:x-large">
+                            <div class="row text-calibri middletext">
                                 @Html.DisplayNameFor(m => m.Name)&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                                 @Html.DisplayFor(m => m.Name)
                             </div>
-                            <div class="row" style="font-family:Calibri;font-size:x-large">
+                            <div class="row text-calibri middletext">
                                 @Html.DisplayNameFor(m => m.LastName)&ensp;&ensp;&ensp;&ensp;
                                 @Html.DisplayFor(m => m.LastName)
                             </div>
-                            <div class="row" style="font-family:Calibri;font-size:x-large">
+                            <div class="row text-calibri middletext">
                                 @Html.DisplayNameFor(m => m.Email)&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                                 @Html.DisplayFor(m => m.Email)
                             </div>
-                            <div class="row" style="font-family:Calibri;font-size:x-large">
+                            <div class="row text-calibri middletext">
                                 @Html.DisplayNameFor(m => m.Status)&ensp;
                                 @Html.DisplayFor(x => x.Status)
                             </div>
@@ -47,10 +47,10 @@
                 </div><br /><br />
                 <center>
                     <div class="row">
-                            @Html.ActionLink("Cancel", "Students", new { id = Model.Id }, new { @class = "btn btn-success btn-lg active" })
-                            @Html.ActionLink("Update", "Update", new { id = Model.Id }, new { @class = "btn btn-primary btn-lg active" })
-                            @Html.ActionLink("Archive", "Archive", new { id = Model.Id }, new { @class = "btn btn-warning btn-lg active" })
-                            @Html.ActionLink("Delete", "Delete", new { id = Model.Id }, new { @class = "btn btn-danger btn-lg active" })
+                        @Html.ActionLink("Cancel", "Students", new { id = Model.Id }, new { @class = "btn btn-success btn-lg active" })
+                        @Html.ActionLink("Update", "Update", new { id = Model.Id }, new { @class = "btn btn-primary btn-lg active" })
+                        @Html.ActionLink("Archive", "Archive", new { id = Model.Id }, new { @class = "btn btn-warning btn-lg active" })
+                        @Html.ActionLink("Delete", "Delete", new { id = Model.Id }, new { @class = "btn btn-danger btn-lg active" })
                     </div>
                 </center><br /><br /><br />
             }

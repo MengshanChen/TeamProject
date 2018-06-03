@@ -8,36 +8,36 @@
 <div class="container">
     <div class="row">
         @{
-            if (Model == null)
-            {
-                <p>No Student</p>
-            }
-            else
-            {
+        if (Model == null)
+        {
+        <p>No Student</p>
+        }
+        else
+        {
+        <div class="row">
+            <h2>Remove Student</h2><br /><br />
+            <center>
                 <div class="row">
-                    <h2>Remove Student</h2><br /><br />
-                    <center>
-                        <div class="row">
-                            @Model.FName<br /><br /><br />
-                        </div>
-                    </center>
-                    @using (Html.BeginForm())
-                    {
-                        @Html.AntiForgeryToken()
-                        @Html.HiddenFor(m => m.Id)
-                        @Html.HiddenFor(m => m.FName)
-                        @Html.HiddenFor(m => m.LName)
-                        @Html.HiddenFor(m => m.SYear)
-                        @Html.HiddenFor(m => m.Status)
-                        <center>
-                            <div class="row">
-                                @Html.ActionLink("Cancel", "ArchivePage", new { id = Model.Id }, new { @class = "btn btn-success btn-lg active" })
-                                <input type="submit" value="Remove" class="btn btn-danger btn-lg active">
-                            </div>
-                        </center>
-                    }
+                    @Model.FName<br /><br /><br />
                 </div>
+            </center>
+            @using (Html.BeginForm())
+            {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(m => m.Id)
+            @Html.HiddenFor(m => m.FName)
+            @Html.HiddenFor(m => m.LName)
+            @Html.HiddenFor(m => m.SYear)
+            @Html.HiddenFor(m => m.Status)
+            <center>
+                <div class="row">
+                    @Html.ActionLink("Cancel", "ArchivePage", new { id = Model.Id }, new { @class = "btn btn-success btn-lg active" })
+                    <input type="submit" value="Remove" class="btn btn-danger btn-lg active">
+                </div>
+            </center>
             }
+        </div>
+        }
         }
     </div>
 </div>

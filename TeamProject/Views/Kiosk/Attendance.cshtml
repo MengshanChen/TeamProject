@@ -2,44 +2,25 @@
 @{
     ViewBag.Title = "Attendance";
 }
-<style>
-    body{
-        margin-top:0px;
-    }
-</style>
-<a href="~/Home/Index" class="btn btn-lg btn-primary btn-block" type="submit" style="background-image:linear-gradient(-16deg, #119a8e 50%, #3eb3a9 50%);color: white;padding: 8px 15px 8px 8px;margin: 8px 0;border: none; border-radius: 4px;cursor: pointer;width: 8%;float:right;font-size:12px;font-weight:bold;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">LOG OUT</a>
+
+
+<a href="~/Home/Index" class="btn btn-lg btn-primary btn-block attendance-logout" type="submit">LOG OUT</a>
 
 <div class="attendance">
-    <br/>
-    <!-- Hello html -->
-    @*<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <div class="content">
-        <div class="content__container">
-            <p class="content__container__text">
-                HELLO
-            </p>
-        </div>
-    </div>*@
+    <br />
     <center>
-        <h5 style="font-size:100px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#f8632f;top: 80px;font-weight:bold;margin-left:83px;">
+        <div class="attendance-title">
             HELLO
-        </h5>
+        </div>
     </center>
-
 
     <!-- date html-->
     <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
-           <center><h3 style="margin-top:-40px"><span id="datetime"></span></h3></center> 
+            <center><div class="attendance-date"><span id="datetime"></span></div></center>
         </div>
     </div>
-
-    <!-- date javascript-->
-    <script>
-        var dt = new Date();
-        document.getElementById("datetime").innerHTML = (("0" + (dt.getMonth() + 1)).slice(-2)) + "." + (("0" + dt.getDate()).slice(-2)) + "." + (dt.getFullYear());
-    </script>
 
     <!-- clock html-->
     <div id="clock" class="light">
@@ -50,106 +31,6 @@
             <div class="digits"></div>
         </div>
     </div>
-
-    <!-- date javascript-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
-    <script src='//static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
-    <script>
-        $(function () {
-
-            // Cache some selectors
-            var clock = $('#clock'),
-                alarm = clock.find('.alarm'),
-                ampm = clock.find('.ampm');
-
-            // Map digits to their names (this will be an array)
-            var digit_to_name = 'zero one two three four five six seven eight nine'.split(' ');
-
-            // This object will hold the digit elements
-            var digits = {};
-
-            // Positions for the hours, minutes, and seconds
-            var positions = [
-                'h1', 'h2', ':', 'm1', 'm2', ':', 's1', 's2'
-            ];
-
-            // Generate the digits with the needed markup,
-            // and add them to the clock
-            var digit_holder = clock.find('.digits');
-
-            $.each(positions, function () {
-
-                if (this == ':') {
-                    digit_holder.append('<div class="dots">');
-                }
-                else {
-
-                    var pos = $('<div>');
-
-                    for (var i = 1; i < 8; i++) {
-                        if (window.CP.shouldStopExecution(1)) { break; }
-                        pos.append('<span class="d' + i + '">');
-                    }
-                    window.CP.exitedLoop(1);
-
-                    // Set the digits as key:value pairs in the digits object
-                    digits[this] = pos;
-
-                    // Add the digit elements to the page
-                    digit_holder.append(pos);
-                }
-
-            });
-
-            // Add the weekday names
-            var weekday_names = 'MON TUE WED THU FRI SAT SUN'.split(' '),
-                weekday_holder = clock.find('.weekdays');
-
-            $.each(weekday_names, function () {
-                weekday_holder.append('<span>' + this + '</span>');
-            });
-
-            var weekdays = clock.find('.weekdays span');
-
-            // Run a timer every second and update the clock
-            (function update_time() {
-                var now = moment().format("hhmmssdA");
-
-                digits.h1.attr('class', digit_to_name[now[0]]);
-                digits.h2.attr('class', digit_to_name[now[1]]);
-                digits.m1.attr('class', digit_to_name[now[2]]);
-                digits.m2.attr('class', digit_to_name[now[3]]);
-                digits.s1.attr('class', digit_to_name[now[4]]);
-                digits.s2.attr('class', digit_to_name[now[5]]);
-
-                // The library returns Sunday as the first day of the week.
-                var dow = now[6];
-                dow--;
-
-                // Sunday!
-                if (dow < 0) {
-                    dow = 6;
-                }
-
-                // Mark the active day of the week
-                weekdays.removeClass('active').eq(dow).addClass('active');
-
-                // Set the am/pm text:
-                ampm.text(now[7] + now[8]);
-
-                // Schedule this function to be run again in 1 sec
-                setTimeout(update_time, 1000);
-
-            })();
-
-            // Switch the theme
-            $('a.button').click(function () {
-                clock.toggleClass('light dark');
-            });
-
-        });
-    </script>
 
     <div class="container">
         <div class="row text-center">
@@ -172,7 +53,7 @@
                                         <img src="~/Content/Images/@item.PictureUri" width="300" height="300" />
                                         <br />
                                         <span>
-                                            <label style="font-family:Calibri;font-size:x-large;">@item.Name</label>
+                                            <label class="text-calibri middletext">@item.Name</label>
                                         </span>
                                     </a>
                                 </div>
@@ -181,10 +62,10 @@
                             {
                                 <div class="col-sm-4">
                                     <a id="@item.Id" href="~/Kiosk/SetLogIn/@item.Id">
-                                        <img src="~/Content/Images/@item.PictureUri" width="300" height="300" style="opacity:0.2;" />
+                                        <img src="~/Content/Images/@item.PictureUri" width="300" height="300" class="studenthover" />
                                         <br />
                                         <span>
-                                            <label style="font-family:Calibri;font-size:x-large;">@item.Name</label>
+                                            <label class="text-calibri middletext">@item.Name</label>
                                         </span>
                                     </a>
                                 </div>
@@ -198,3 +79,110 @@
 </div>
 
 
+
+<!-- date javascript-->
+<script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = (("0" + (dt.getMonth() + 1)).slice(-2)) + "." + (("0" + dt.getDate()).slice(-2)) + "." + (dt.getFullYear());
+</script>
+
+
+<!-- clock javascript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+<script src='//static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+<script>
+    $(function () {
+
+        // Cache some selectors
+        var clock = $('#clock'),
+            alarm = clock.find('.alarm'),
+            ampm = clock.find('.ampm');
+
+        // Map digits to their names (this will be an array)
+        var digit_to_name = 'zero one two three four five six seven eight nine'.split(' ');
+
+        // This object will hold the digit elements
+        var digits = {};
+
+        // Positions for the hours, minutes, and seconds
+        var positions = [
+            'h1', 'h2', ':', 'm1', 'm2', ':', 's1', 's2'
+        ];
+
+        // Generate the digits with the needed markup,
+        // and add them to the clock
+        var digit_holder = clock.find('.digits');
+
+        $.each(positions, function () {
+
+            if (this == ':') {
+                digit_holder.append('<div class="dots">');
+            }
+            else {
+
+                var pos = $('<div>');
+
+                for (var i = 1; i < 8; i++) {
+                    if (window.CP.shouldStopExecution(1)) { break; }
+                    pos.append('<span class="d' + i + '">');
+                }
+                window.CP.exitedLoop(1);
+
+                // Set the digits as key:value pairs in the digits object
+                digits[this] = pos;
+
+                // Add the digit elements to the page
+                digit_holder.append(pos);
+            }
+
+        });
+
+        // Add the weekday names
+        var weekday_names = 'MON TUE WED THU FRI SAT SUN'.split(' '),
+            weekday_holder = clock.find('.weekdays');
+
+        $.each(weekday_names, function () {
+            weekday_holder.append('<span>' + this + '</span>');
+        });
+
+        var weekdays = clock.find('.weekdays span');
+
+        // Run a timer every second and update the clock
+        (function update_time() {
+            var now = moment().format("hhmmssdA");
+
+            digits.h1.attr('class', digit_to_name[now[0]]);
+            digits.h2.attr('class', digit_to_name[now[1]]);
+            digits.m1.attr('class', digit_to_name[now[2]]);
+            digits.m2.attr('class', digit_to_name[now[3]]);
+            digits.s1.attr('class', digit_to_name[now[4]]);
+            digits.s2.attr('class', digit_to_name[now[5]]);
+
+            // The library returns Sunday as the first day of the week.
+            var dow = now[6];
+            dow--;
+
+            // Sunday!
+            if (dow < 0) {
+                dow = 6;
+            }
+
+            // Mark the active day of the week
+            weekdays.removeClass('active').eq(dow).addClass('active');
+
+            // Set the am/pm text:
+            ampm.text(now[7] + now[8]);
+
+            // Schedule this function to be run again in 1 sec
+            setTimeout(update_time, 1000);
+
+        })();
+
+        // Switch the theme
+        $('a.button').click(function () {
+            clock.toggleClass('light dark');
+        });
+
+    });
+</script>
