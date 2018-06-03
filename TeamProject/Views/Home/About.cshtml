@@ -1,41 +1,30 @@
 ﻿@{
+    /**/
+
     Layout = "~/Views/Shared/_FooterLayout.cshtml";
     ViewBag.Title = "About";
 }
 
-<style>
-    body {
-        /* Location of the image */
-        background-image: url("../../Content/Images/AboutBackground.jpg");
-        /* Background image is centered vertically and horizontally at all times */
-        background-position: center center;
-        /* Background image doesn't tile */
-        background-repeat: no-repeat;
-        /* Background image is fixed in the viewport so that it doesn't move when 
-        the content's height is greater than the image's height */
-        background-attachment: fixed;
-        /* This is what makes the background image rescale based
-        on the container's size */
-        background-size: cover;
-        /* Set a background color that will be displayed
-        while the background image is loading */
-        background-color: #464646;
-        background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%), url("../../Content/Images/AboutBackground.jpg");
-    }
-</style>
-<h1 style="font-family:Calibri;font-weight:bolder">&emsp;About Us</h1>
-<center>
-    <img src="~/Content/Images/UHigh.png" style="max-height:200px;" />
-    <br /><br />
-    <h2 style="font-size:xx-large;font-family:Calibri;position:center;font-weight:bold">"To awaken the dreamers, for the dreamers, by the dreamers"</h2>
-    <br />
-    <p style="font-size:large;font-family:Calibri;position:center;font-weight:bold">
-        The brand new time-based attendance system will lower your workload.
-        <br /><br />
-        No more roll-call.
-        <br /><br />
-        Students will simply click one button to check in and check out.
-        <br /><br />
-        The user-friendly interface and game content will encourage students to come to school on time and stay longer.
-    <p />
-</center>
+
+<body class="about-background">
+    <div class="text-calibri title">&emsp;About Us</div>
+    <center>
+        <div>
+            <img src="~/Content/Images/UHigh.png" class="about-image" />
+            <br /><br />
+            <div class="text-calibri text-style text-bold largetext">"To awaken the dreamers, for the dreamers, by the dreamers"</div>
+            <br />
+            <p class="text-calibri text-style text-bold paragraph">
+                The brand new time-based attendance system will lesson your workload.
+                <br /><br />
+                You don't have to call attendance anymore.
+                <br /><br />
+                Student will simply click a button to check in and check out.
+                <br /><br />
+                The user-friendly interface and game content will promote students to come to school on time and stay longer.
+            <p />
+        </div>
+    </center>
+</body>
+
+

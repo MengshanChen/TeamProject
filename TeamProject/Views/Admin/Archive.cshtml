@@ -19,7 +19,7 @@
                     <center>
                         <div class="row">
                             @*<img src="~/Content/Images/" width="300" height="300" /><br />*@
-                            <span style="font-size:xx-large">
+                            <span class="largetext">
                                 @Model.FName<br /><br /><br />
                             </span>
                         </div>
@@ -31,19 +31,19 @@
                         @Html.HiddenFor(m => m.FName)
                         @Html.HiddenFor(m => m.LName)
                         <div class="row">
-                            <div class="col-sm-6 text-right" style="font-family:Calibri;font-size:x-large">
+                            <div class="col-sm-6 text-right text-calibri middletext">
                                 @Html.DisplayNameFor(m => m.SYear)
                             </div>
-                            <div class="col-sm-2" style="font-family:Calibri;font-size:x-large">
+                            <div class="col-sm-2 text-calibri middletext">
                                 @Html.EditorFor(m => m.SYear)
                                 @Html.ValidationMessageFor(m => m.SYear)
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-6 text-right" style="font-family:Calibri;font-size:x-large">
+                            <div class="col-sm-6 text-right text-calibri middletext">
                                 @Html.DisplayNameFor(m => m.Status)
                             </div>
-                            <div class="col-sm-2" style="font-family:Calibri;font-size:x-large">
+                            <div class="col-sm-2 text-calibri middletext">
                                 @Html.EnumDropDownListFor(m => m.Status, "Select Status")
                                 @Html.ValidationMessageFor(m => m.Status)
                             </div>

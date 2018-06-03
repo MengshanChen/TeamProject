@@ -17,37 +17,37 @@
                 @Html.HiddenFor(m => m.Id)
 
                 <div class="row">
-                    <div class="col-sm-5 text-right" style="font-family:Calibri;font-size:x-large">
+                    <div class="col-sm-5 text-right text-calibri middletext">
                         @Html.DisplayNameFor(m => m.Name)
                     </div>
-                    <div class="col-sm-2" style="font-family:Calibri;font-size:x-large">
+                    <div class="col-sm-2  text-calibri middletext">
                         @Html.EditorFor(m => m.Name)
                         @Html.ValidationMessageFor(m => m.Name)
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-5 text-right" style="font-family:Calibri;font-size:x-large">
+                    <div class="col-sm-5 text-right text-calibri middletext">
                         @Html.DisplayNameFor(m => m.LastName)
                     </div>
-                    <div class="col-sm-2" style="font-family:Calibri;font-size:x-large">
+                    <div class="col-sm-2  text-calibri middletext">
                         @Html.EditorFor(m => m.LastName)
                         @Html.ValidationMessageFor(m => m.LastName)
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-5 text-right" style="font-family:Calibri;font-size:x-large">
+                    <div class="col-sm-5 text-right text-calibri middletext">
                         @Html.DisplayNameFor(m => m.Email)
                     </div>
-                    <div class="col-sm-2" style="font-family:Calibri;font-size:x-large">
+                    <div class="col-sm-2 text-calibri middletext">
                         @Html.EditorFor(m => m.Email)
                         @Html.ValidationMessageFor(m => m.Email)
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-5 text-right" style="font-family:Calibri;font-size:x-large">
+                    <div class="col-sm-5 text-right text-calibri middletext">
                         @Html.DisplayNameFor(m => m.PictureId)
                     </div>
-                    <div class="col-sm-2" style="font-family:Calibri;font-size:x-large">
+                    <div class="col-sm-2  text-calibri middletext">
                         @Html.DropDownListFor(m => m.PictureId, TeamProject.Backend.PictureBackend.Instance.GetPictureListItem(Model.PictureId))
                         @Html.ValidationMessageFor(m => m.PictureId)
                     </div>
