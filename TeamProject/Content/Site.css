@@ -2091,18 +2091,15 @@ blockquote {
 
 /*-----collection-----*/
 .direction-color {
-    background-color: #f1da94;
+    background-color: white;
 }
 
 .collection-container {
-    background-color: #f6c739;
-}
-
-.item {
+    background-color: #f8632f;
 }
 
 .carousel-inner {
-    background-color: #f6c739;
+    background-color: #f8632f;
 }
 
 .jumbotron {

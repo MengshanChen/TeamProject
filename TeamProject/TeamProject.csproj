@@ -198,7 +198,6 @@
     <Content Include="Content\Images\defaultboy1.png" />
     <Content Include="Content\Images\default.png" />
     <Content Include="Content\Images\defaultboy.png" />
-    <Content Include="Content\Images\egypt-pyramids.jpg" />
     <Content Include="Content\Images\game info\boardlevel1.png" />
     <Content Include="Content\Images\game info\boardlevel2.png" />
     <Content Include="Content\Images\game info\boardlevel3.png" />
@@ -210,6 +209,8 @@
     <Content Include="Content\Images\glass2.jpg" />
     <Content Include="Content\Images\goodbye.gif" />
     <Content Include="Content\Images\High speed.png" />
+    <Content Include="Content\Images\khafre pyramid.png" />
+    <Content Include="Content\Images\khufu pyramid.png" />
     <Content Include="Content\Images\Kimmie_portrait.jpg" />
     <Content Include="Content\Images\level 1.png" />
     <Content Include="Content\Images\level 2.png" />
@@ -223,9 +224,11 @@
     <Content Include="Content\Images\man4.jpg" />
     <Content Include="Content\Images\man5.jpg" />
     <Content Include="Content\Images\market.jpg" />
+    <Content Include="Content\Images\Menkaure pyramid.png" />
     <Content Include="Content\Images\Mid speed.png" />
     <Content Include="Content\Images\museum2.jpg" />
     <Content Include="Content\Images\needle.jpg" />
+    <Content Include="Content\Images\Nyuserre Ini pyramid.png" />
     <Content Include="Content\Images\Olivia.jpg" />
     <Content Include="Content\Images\Prizedex.jpg" />
     <Content Include="Content\Images\prizedex\1.png" />
@@ -250,6 +253,7 @@
     <Content Include="Content\Images\Student Dashboard\game dashboard final.png" />
     <Content Include="Content\Images\Student Dashboard\welcome board final.png" />
     <Content Include="Content\Images\Student Profile\student profile final.png" />
+    <Content Include="Content\Images\Tut pyramid.png" />
     <Content Include="Content\Images\UHigh.png" />
     <Content Include="Content\Images\university2.jpg" />
     <Content Include="Content\Images\welcomeback.gif" />
@@ -259,6 +263,7 @@
     <Content Include="Content\Images\WorldTour\junior.png" />
     <Content Include="Content\Images\prize tomb with text - 2.png" />
     <Content Include="Content\Images\WorldTour\senior.png" />
+    <Content Include="Content\Images\Zoser pyramid.png" />
     <Content Include="Content\Pages\Admin Profile.png" />
     <Content Include="Content\Pages\Admin Registration.png" />
     <Content Include="Content\Pages\admin.jpg" />
