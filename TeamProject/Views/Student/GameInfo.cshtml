@@ -6,59 +6,31 @@
     ViewBag.Title = "GameInfo";
 }
 
-<style>
-    body {
-        margin-bottom: 20px;
-        padding: 30px;
-        margin: 30px;       
-    }
+<body class="gameinfo">
+    <div id="gameinfo-style">
+        <h1 style="font-family: Stencil;">Hi, Olivia</h1>
+        <aside>
+            <div class="gameinfo-img">
+                <img src="~/Content/Images/game info/game info picture.png" class="gameinfo-imgsize1" />
+            </div>
+            <div class="gameinfo-img">
+                <img src="~/Content/Images/game info/gamemessage.png" class="gameinfo-imgsize2" />
+            </div>
+        </aside>
 
-    section {
-        width: 66%;
-        float: left;
-    }
-
-    aside {
-        padding: 30px;
-        width: 32%;
-        float: left;
-    }    
-
-    .image {
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    .level {
-        margin-top: 60px;
-        margin-left: 30px;
-        float: left;
-    }
-
-    
-</style>
-
-<h1 style="font-family: Stencil;">Hi, Olivia</h1>
-<aside>    
-    <div class="image">
-        <img src="~/Content/Images/game info/game info picture.png" width="250" height="250" />
+        <section>
+            <div class="gameinfo-level">
+                <a href="~/Student/Level1"><img src="~/Content/Images/game info/boardlevel1.png" class="gameinfo-imgsize3"></a>
+            </div>
+            <div class="gameinfo-level">
+                <a href="~/Student/Game"><img src="~/Content/Images/game info/boardlevel2.png" class="gameinfo-imgsize3"></a>
+            </div>
+            <div class="gameinfo-level">
+                <a href="~/Student/Level3"><img src="~/Content/Images/game info/boardlevel3.png" class="gameinfo-imgsize3"></a>
+            </div>
+        </section>
     </div>
-    <div class="image">
-        <img src="~/Content/Images/game info/gamemessage.png" width="300" height="375" />
-    </div>
-</aside>
-
-<section>
-    <div class="level">
-        <a href="~/Student/Level1"><img src="~/Content/Images/game info/boardlevel1.png" width="720" height="250"></a>
-    </div>
-    <div class="level">
-        <a href="~/Student/Game"><img src="~/Content/Images/game info/boardlevel2.png" width="720" height="250"></a>
-    </div>
-    <div class="level">
-        <a href="~/Student/Level3"><img src="~/Content/Images/game info/boardlevel3.png" width="720" height="250"></a>
-    </div>
-</section>
+</body>
 
 
 
