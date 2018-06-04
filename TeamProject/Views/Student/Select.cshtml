@@ -13,7 +13,9 @@
         <div class="corner" id="left_bottom"></div>
         <div class="corner" id="right_top"></div>
         <div class="corner" id="right_bottom"></div>
-        <span>Selection</span>
+        <div id="game-title">
+            <span>Selection</span>
+        </div>
         <blockquote>
             <p>
                 <i>
@@ -27,10 +29,10 @@
 </div>
 
 <!--pictures-->
-<div style="margin-top:-40px;">
+<div class="coin-margin">
     <div class="row">
         <div class="col-md-4">
-            <div class="hovereffect2">
+            <div class="select-effect">
                 <img class="img-responsive" src='~/Content/Images/egypt-pyramids.jpg' alt="Khufu">
                 <div class="overlay">                    
                         <h2><a href="~/Student/Play">Khufu pyramid</a></h2>                        
@@ -39,7 +41,7 @@
         </div>
 
         <div class="col-md-4">
-            <div class="hovereffect2">
+            <div class="select-effect">
                 <img class="img-responsive" src='~/Content/Images/egypt-pyramids.jpg' alt="Khafre">
                 <div class="overlay">
                     <h2><a href="~/Student/Play">Khafre pyramid</a></h2>
@@ -48,7 +50,7 @@
         </div>
 
         <div class="col-md-4">
-            <div class="hovereffect2">
+            <div class="select-effect">
                 <img class="img-responsive" src='~/Content/Images/egypt-pyramids.jpg' alt="Menkaure">
                 <div class="overlay">
                     <h2><a href="~/Student/Play">Menkaure pyramid</a></h2>
@@ -63,7 +65,7 @@
 
 <div class="row">
     <div class="col-md-4">
-        <div class="hovereffect2">
+        <div class="select-effect">
             <img class="img-responsive" src='~/Content/Images/egypt-pyramids.jpg' alt="Zoser">
             <div class="overlay">
                 <h2><a href="~/Student/Play">Zoser pyramid</a></h2>
@@ -72,7 +74,7 @@
     </div>
 
     <div class="col-md-4">
-        <div class="hovereffect2">
+        <div class="select-effect">
             <img class="img-responsive" src='~/Content/Images/egypt-pyramids.jpg' alt="Nyuserre Ini">
             <div class="overlay">
                 <h2><a href="~/Student/Play">Nyuserre Ini pyramid</a></h2>
@@ -81,7 +83,7 @@
     </div>
 
     <div class="col-md-4">
-        <div class="hovereffect2">
+        <div class="select-effect">
             <img class="img-responsive" src='~/Content/Images/egypt-pyramids.jpg' alt="Tut">
             <div class="overlay">
                 <h2><a href="~/Student/Play">Tut pyramid</a></h2>
@@ -90,156 +92,6 @@
     </div>
 </div>
 
-<style>
-    /*selection page of game*/
-    /*style for title*/
-    #ct {
-        height: 150px;
-        width: 590px;
-        border: 1px solid #f1c40f;
-        margin: 180px auto;
-        text-align: center;
-        position: relative;
-        color: white;
-        padding: 15px;
-        background: #f8632f;
-    }
-
-    span {
-        color: #f1c40f;
-        padding: 0 10px;
-        font-size: 50px;
-        position: relative;
-        top: -90px;
-        font-weight: bold;
-    }
-
-    .corner {
-        height: 30px;
-        width: 30px;
-        border-radius: 50%;
-        border: 1px solid #fff;
-        transform: rotate(-45deg);
-        position: absolute;
-        background: white;
-    }
-
-    #left_top {
-        top: -16px;
-        left: -16px;
-        border-color: transparent transparent #f1c40f transparent;
-    }
-
-    #right_top {
-        top: -16px;
-        right: -16px;
-        border-color: transparent transparent transparent #f1c40f;
-    }
-
-    #left_bottom {
-        bottom: -16px;
-        left: -16px;
-        border-color: transparent #f1c40f transparent transparent;
-    }
-
-    #right_bottom {
-        bottom: -16px;
-        right: -16px;
-        border-color: #f1c40f transparent transparent transparent;
-    }
-
-    blockquote p {
-        font-size: 25px;
-        font-weight: 300;
-        line-height: 1.25;
-    }
-
-    blockquote {
-        padding: 0px;
-        margin: -32px 0 0 0;
-        border-left: 5px solid white;
-    }
-
-
-    /*style for images*/
-    .hovereffect2 {
-        width: 100%;
-        height: 100%;
-        float: left;
-        overflow: hidden;
-        position: relative;
-        text-align: center;
-        cursor: default;
-    }
-
-        .hovereffect2 .overlay {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            overflow: hidden;
-            top: 0;
-            left: 0;
-        }
-
-        .hovereffect2 img {
-            display: block;
-            position: relative;
-            -webkit-transition: all 0.4s ease-in;
-            transition: all 0.4s ease-in;
-        }
-
-        .hovereffect2:hover img {
-            filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
-            filter: grayscale(1) blur(3px);
-            -webkit-filter: grayscale(1) blur(3px);
-            -webkit-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-            transform: scale(1.2);
-        }
-
-        .hovereffect2 h2 {
-            text-transform: uppercase;
-            text-align: center;
-            position: relative;
-            font-size: 17px;
-            padding: 40px;
-            background: rgba(0, 0, 0, 0.6);
-            margin-top: 100px;
-        }
-
-        .hovereffect2 a.info {
-            display: inline-block;
-            text-decoration: none;
-            padding: 7px 14px;
-            border: 1px solid #fff;
-            margin: 50px 0 0 0;
-            background-color: transparent;
-        }
-
-            .hovereffect2 a.info:hover {
-                box-shadow: 0 0 5px #fff;
-            }
-
-        .hovereffect2 a.info, .hovereffect2 h2 {
-            -webkit-transform: scale(0.7);
-            -ms-transform: scale(0.7);
-            transform: scale(0.7);
-            -webkit-transition: all 0.4s ease-in;
-            transition: all 0.4s ease-in;
-            opacity: 0;
-            filter: alpha(opacity=0);
-            color: #fff;
-            text-transform: uppercase;
-        }
-
-        .hovereffect2:hover a.info, .hovereffect2:hover h2 {
-            opacity: 1;
-            filter: alpha(opacity=100);
-            -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-            transform: scale(1);
-        }
-</style>
 
 
 
@@ -257,53 +109,5 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-@* Margin and Padding Style *@
-@*<style type="text/css">
-
-        body {
-            padding: 30px;
-            margin: 30px;
-        }
-    </style>*@
-
-
-@* Display The World Tour Page Title *@
-@*<h1>Select Your Building</h1>*@
-
-
-@* Display Select Gamepiece Page *@
-@*<h2>Pick the Building for Your Avatar on Level 1</h2>*@
-
-@* Explain the Gamepiece *@
-@*<h3>Your Building will Grow Faster the More Coins You Earn</h3>*@
-
-
-@* World Tour Select Gamepiece image *@
-@*<!DOCTYPE html>
-    <html>
-    <body>
-        <map name="Building">
-            <area shape="rect" coords="60, 340, 130, 365" href="~/Student/Play" alt="Play">
-            <area shape="rect" coords="400, 340, 470, 365" href="~/Student/Play" alt="Play">
-            <area shape="rect" coords="740, 340, 820, 365" href="~/Student/Play" alt="Play">
-            <area shape="rect" coords="1075, 340, 1150, 365" href="~/Student/Play" alt="Play">
-            <area shape="rect" coords="150, 650, 225, 675" href="~/Student/Play" alt="Play">
-            <area shape="rect" coords="600, 650, 680, 675" href="~/Student/Play" alt="Play">
-            <area shape="rect" coords="1020, 650, 1090, 675" href="~/Student/Play" alt="Play">
-        </map>
-        <img src="~/Content/Images/WorldTour/Building.png" style="max-width:100%;height:auto;" alt="World Tour" usemap="#Building">
-    </body>
-    </html>*@
 
 
