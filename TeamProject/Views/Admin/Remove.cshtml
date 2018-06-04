@@ -3,8 +3,6 @@
     ViewBag.Title = "Remove";
 }
 
-<h2>Remove</h2>
-
 <div class="container">
     <div class="row">
         @{
@@ -15,10 +13,12 @@
         else
         {
         <div class="row">
-            <h2>Remove Student</h2><br /><br />
+            <h2>Remove Student from Archive</h2><br /><br />
             <center>
                 <div class="row">
-                    @Model.FName<br /><br /><br />
+                    <span class="largetext">
+                        @Model.FName @Model.LName<br /><br />
+                    </span>
                 </div>
             </center>
             @using (Html.BeginForm())

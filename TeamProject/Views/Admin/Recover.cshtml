@@ -3,8 +3,6 @@
     ViewBag.Title = "Recover";
 }
 
-<h2>Recover</h2>
-
 <div class="container">
     <div class="row">
         @{
@@ -15,10 +13,10 @@
             else
             {
                 <div class="row">
-                    <h2>Recover Student</h2><br /><br />
+                    <h2>Recover Student from Archive</h2><br /><br />
                     <center>
                         <span class="largetext">
-                            @Model.FName<br /><br /><br />
+                            @Model.FName @Model.LName<br /><br />
                         </span>
                     </center>
                     @using (Html.BeginForm())
