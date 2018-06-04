@@ -21,6 +21,10 @@ namespace TeamProject.Models
         /// </summary>
         public ArchiveViewModel() { }
 
+        /// <summary>
+        /// Take the data list passed in, and convert each to a new ArchiveModel item and add that to the ArchiveList
+        /// </summary>
+        /// <param name="dataList"></param>
         public ArchiveViewModel(List<ArchiveModel> dataList)
         {
             foreach (var item in dataList)

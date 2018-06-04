@@ -8,7 +8,7 @@ using TeamProject.Models;
 namespace TeamProject.Backend
 {
         /// <summary>
-        /// Datasource Interface for Picture
+        /// Datasource Interface for Archive
         /// </summary>
         public interface IArchiveInterface
         {

@@ -19,9 +19,10 @@ namespace TeamProject.Controllers
         // A ViewModel used for the Archived student that contains the list of them
         private ArchiveViewModel ArchiveViewModel = new ArchiveViewModel();
 
+        // The Backend Data source
         private ArchiveBackend ArchiveBackend = ArchiveBackend.Instance;
 
-        // GET: Admin
+        // GET: Admin Dashboard
         public ActionResult Dashboard()
         {
             return View();
@@ -84,17 +85,14 @@ namespace TeamProject.Controllers
                 RedirectToAction("Error", "Home", "Invalid Record");
             }
             var data = new ArchiveModel(targetStudent);
-
-            //var myData = new StudentDisplayViewModel(targetStudent);
-            //var myData2 = new ArchiveModel(new StudentModel(myData), DateTime.Now.Year.ToString(), GraduateStatusEnum.Graduate);
-            //var tuple = new Tuple<StudentDisplayViewModel, ArchiveModel>(myData, myData2);
-            //if (myData == null)
-            //{
-            //    RedirectToAction("Error", "Home", "Invalid Record");
-            //}
             return View(data);
         }
 
+        /// <summary>
+        /// Archive the student data and delete the student from current list
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult Archive([Bind(Include=
                                     "Id,"+
@@ -163,9 +161,7 @@ namespace TeamProject.Controllers
                 // Return back for Edit
                 return View(data);
             }
-
             StudentBackend.Create(data);
-
             return RedirectToAction("Students");
         }
 
@@ -292,6 +288,11 @@ namespace TeamProject.Controllers
             return RedirectToAction("Students");
         }
 
+        /// <summary>
+        /// Shows the studnet name to remove from archive list
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         //GET
         public ActionResult Remove(string id = null)
         {
@@ -310,6 +311,11 @@ namespace TeamProject.Controllers
             return View(myData);
         }
 
+        /// <summary>
+        /// This remove the Student sent up as a post from the archive remove page
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult Remove([Bind(Include=
                                         "Id,"+
@@ -341,6 +347,12 @@ namespace TeamProject.Controllers
             return RedirectToAction("ArchivePage");
         }
 
+        /// <summary>
+        /// Shows the studnet name to recover from archive list
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        // GET
         public ActionResult Recover(string id = null)
         {
             var ArchivedStudent = ArchiveBackend.Read(id);
@@ -358,6 +370,11 @@ namespace TeamProject.Controllers
             return View(myData);
         }
 
+        /// <summary>
+        /// This recover the Student sent up as a post from the archive recover page
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult Recover ([Bind(Include=
                                         "Id,"+

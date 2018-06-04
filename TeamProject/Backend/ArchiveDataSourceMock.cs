@@ -39,12 +39,12 @@ namespace TeamProject.Backend
 
 
         /// <summary>
-        /// The Picture List
+        /// The Archived Students List
         /// </summary>
         private List<ArchiveModel> ArchiveList = new List<ArchiveModel>();
 
         /// <summary>
-        /// Makes a new Picture
+        /// Create new Archive studnet
         /// </summary>
         /// <param name="data"></param>
         /// <returns>Avatar Passed In</returns>
