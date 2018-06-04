@@ -223,13 +223,14 @@
     <Content Include="Content\Images\museum2.jpg" />
     <Content Include="Content\Images\needle.jpg" />
     <Content Include="Content\Images\Olivia.jpg" />
-    <Content Include="Content\Images\prizedex.jpg" />
+    <Content Include="Content\Images\Prizedex.jpg" />
     <Content Include="Content\Images\prizedex\1.png" />
     <Content Include="Content\Images\prizedex\2.png" />
     <Content Include="Content\Images\prizedex\3.png" />
     <Content Include="Content\Images\prizedex\4.png" />
     <Content Include="Content\Images\prizedex\5.png" />
     <Content Include="Content\Images\prizedex\6.png" />
+    <Content Include="Content\Images\prizedex\Prizedex.jpg" />
     <Content Include="Content\Images\record chart.png" />
     <Content Include="Content\Images\seattle2.jpg" />
     <Content Include="Content\Images\defaultgirl.png" />
