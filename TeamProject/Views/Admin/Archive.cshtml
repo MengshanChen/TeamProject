@@ -18,9 +18,8 @@
                     <h2>Archive Student</h2><br /><br />
                     <center>
                         <div class="row">
-                            @*<img src="~/Content/Images/" width="300" height="300" /><br />*@
                             <span class="largetext">
-                                @Model.FName<br /><br /><br />
+                                @Model.FName<br /><br />
                             </span>
                         </div>
                     </center>
@@ -34,7 +33,7 @@
                             <div class="col-sm-6 text-right text-calibri middletext">
                                 @Html.DisplayNameFor(m => m.SYear)
                             </div>
-                            <div class="col-sm-2 text-calibri middletext">
+                            <div class="col-sm-6 text-calibri middletext">
                                 @Html.EditorFor(m => m.SYear)
                                 @Html.ValidationMessageFor(m => m.SYear)
                             </div>
@@ -47,7 +46,7 @@
                                 @Html.EnumDropDownListFor(m => m.Status, "Select Status")
                                 @Html.ValidationMessageFor(m => m.Status)
                             </div>
-                        </div>
+                        </div><br /><br />
                         <center>
                             <div class="row">
                                 @Html.ActionLink("Cancel", "Students", new { id = Model.Id }, new { @class = "btn btn-success btn-lg active" })
