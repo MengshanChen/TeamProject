@@ -452,7 +452,7 @@ h1 {
 
 /*log in button--student orange*/
 .linearorange {
-    background-image: linear-gradient(-16deg, #119a8e 50%, #3eb3a9 50%);
+    background-image: linear-gradient(-16deg, #f8632f 50%, #f97648 50%)
 }
 
 /*log in button -- kiosk green*/
