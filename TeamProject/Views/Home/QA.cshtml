@@ -1,0 +1,30 @@
+﻿@model TeamProject.Models.MessageViewModel
+@{
+    Layout = "~/Views/Shared/_FooterLayout.cshtml";
+    ViewBag.Title = "Q&A List";
+}
+
+<div class="container">
+    <div class="row text-center">
+        <div class="col-sm-12">
+            @{
+                if (Model.MessageList == null || !Model.MessageList.Any())
+                {
+                    <br />
+                    <p>No Message in the System</p>
+                    <br />
+                }
+                else
+                {
+                    foreach (var item in Model.MessageList)
+                    {
+                        <div row>
+                            <label class="text-calibri largetext">@item.Message</label><br />
+                        </div>
+                    }
+                }
+            }
+        </div><br /><br />
+    </div>
+</div>
+

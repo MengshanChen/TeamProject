@@ -1,4 +1,5 @@
-﻿@{
+﻿@model TeamProject.Models.MessageModel
+@{
     Layout = "~/Views/Shared/_FooterLayout.cshtml";
     ViewBag.Title = "Contact";
 }
@@ -38,3 +39,37 @@
     setting aside her career to adopt and raise children who needed a family. In 2015, Lura earned her Masters
     in Teaching Math and Science from Seattle Pacific University.
 </p>
+
+
+<div class="container">
+    <div class="row">
+        @{
+            if (Model == null)
+            {
+                <p>No Message</p>
+            }
+            else
+            {
+                <div class="row">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="row">
+                            <div class="col-sm-2 text-right text-calibri middletext">
+                                @Html.DisplayNameFor(m => m.Message)
+                            </div>
+                            <div class="col-sm-2 text-calibri middletext">
+                                @Html.EditorFor(m => m.Message)
+                                @Html.ValidationMessageFor(m => m.Message)
+                            </div>
+                            <div class="col-sm-3" align="right">
+                                <input type="submit" value="Submit" class="btn btn-warning">
+                                @Html.ActionLink("View Q&A", "QA", null, new { @class = "btn btn-success" })
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        }
+    </div>
+</div>

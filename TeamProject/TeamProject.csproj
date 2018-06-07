@@ -152,8 +152,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Backend\QABackend.cs" />
     <Compile Include="Backend\ArchiveBackend.cs" />
+    <Compile Include="Backend\QADataSourceMock.cs" />
     <Compile Include="Backend\ArchiveDataSourceMock.cs" />
+    <Compile Include="Backend\QAInterface.cs" />
     <Compile Include="Backend\ArchiveInterface.cs" />
     <Compile Include="Backend\PictureBackend.cs" />
     <Compile Include="Backend\PictureDataSourceMock.cs" />
@@ -173,6 +176,8 @@
     <Compile Include="Models\Enum\DataSourceEnum.cs" />
     <Compile Include="Models\Enum\GraduateStatusEnum.cs" />
     <Compile Include="Models\Enum\StudentStatusEnum.cs" />
+    <Compile Include="Models\MessageModel.cs" />
+    <Compile Include="Models\MessageViewModel.cs" />
     <Compile Include="Models\PictureModel.cs" />
     <Compile Include="Models\PIctureViewModel.cs" />
     <Compile Include="Models\StudentModel.cs" />
@@ -359,6 +364,7 @@
     <Content Include="Views\Admin\Archive.cshtml" />
     <Content Include="Views\Admin\Remove.cshtml" />
     <Content Include="Views\Admin\Recover.cshtml" />
+    <Content Include="Views\Home\QA.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
