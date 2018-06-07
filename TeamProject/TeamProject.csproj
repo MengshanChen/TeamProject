@@ -203,6 +203,7 @@
     <Content Include="Content\Images\defaultboy1.png" />
     <Content Include="Content\Images\default.png" />
     <Content Include="Content\Images\defaultboy.png" />
+    <Content Include="Content\Images\game dashboard final.png" />
     <Content Include="Content\Images\game info\boardlevel1.png" />
     <Content Include="Content\Images\game info\boardlevel2.png" />
     <Content Include="Content\Images\game info\boardlevel3.png" />
@@ -255,7 +256,6 @@
     <Content Include="Content\Images\overwrite data.png" />
     <Content Include="Content\Images\Report.png" />
     <Content Include="Content\Images\Student Dashboard\attendance record dashboard final.png" />
-    <Content Include="Content\Images\Student Dashboard\game dashboard final.png" />
     <Content Include="Content\Images\Student Dashboard\welcome board final.png" />
     <Content Include="Content\Images\Student Profile\student profile final.png" />
     <Content Include="Content\Images\Tut pyramid.png" />
