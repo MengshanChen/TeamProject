@@ -39,12 +39,12 @@ namespace TeamProject.Backend
 
 
         /// <summary>
-        /// The Archived Students List
+        /// The Message list
         /// </summary>
         private List<MessageModel> MessageList = new List<MessageModel>();
 
         /// <summary>
-        /// Create new Archive studnet
+        /// Create new Message with exisitng MessageModel data
         /// </summary>
         /// <param name="data"></param>
         /// <returns>Avatar Passed In</returns>
@@ -108,7 +108,7 @@ namespace TeamProject.Backend
         /// <summary>
         /// Return the full dataset
         /// </summary>
-        /// <returns>List of Avatars</returns>
+        /// <returns>List of Message</returns>
         public List<MessageModel> Index()
         {
             return MessageList;

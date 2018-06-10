@@ -110,7 +110,7 @@ namespace TeamProject.Backend
         /// <summary>
         /// Return the full dataset
         /// </summary>
-        /// <returns>List of Avatars</returns>
+        /// <returns>List of Pictures</returns>
         public List<PictureModel> Index()
         {
             return PictureList;

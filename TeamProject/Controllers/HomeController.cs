@@ -41,6 +41,11 @@ namespace TeamProject.Controllers
             return View(newMessage);
         }
 
+        /// <summary>
+        /// This create the message sent up as a post from the contact page to Q&A page
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult Contact([Bind(Include =
                                     "Id,"+

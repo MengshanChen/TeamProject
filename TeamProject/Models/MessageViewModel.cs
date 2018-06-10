@@ -9,17 +9,17 @@ namespace TeamProject.Models
     public class MessageViewModel
     {
         /// <summary>
-        /// The student List to return to the View
+        /// The message List to return to the View
         /// </summary>
         public List<MessageModel> MessageList = new List<MessageModel>();
 
         /// <summary>
-        /// Default constructor, needed becase of the constructor that takes a List of Student Models
+        /// Default constructor, needed becase of the constructor that takes a List of message Models
         /// </summary>
         public MessageViewModel() { }
 
         /// <summary>
-        /// Take the data list passed in, and convert each to a new StudentDisplayViewModel item and add that to the StudentList
+        /// Take the data list passed in, and convert each to a new MessageModel item and add that to the MessageList
         /// </summary>
         /// <param name="dataList"></param>
         public MessageViewModel(List<MessageModel> dataList)

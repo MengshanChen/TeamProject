@@ -8,7 +8,7 @@ using TeamProject.Models;
 namespace TeamProject.Backend
 {
         /// <summary>
-        /// Datasource Interface for Archive
+        /// Datasource Interface for QA
         /// </summary>
         public interface IQAInterface
         {

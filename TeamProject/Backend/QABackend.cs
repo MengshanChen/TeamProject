@@ -57,10 +57,10 @@ namespace TeamProject.Backend
         }
 
         /// <summary>
-        /// Makes a new Archive
+        /// Makes a new Message
         /// </summary>
         /// <param name="data"></param>
-        /// <returns>Avatar Passed In</returns>
+        /// <returns>Message Passed In</returns>
         public MessageModel Create(MessageModel data)
         {
             var myReturn = DataSource.Create(data);

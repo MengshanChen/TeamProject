@@ -44,7 +44,7 @@ namespace TeamProject.Backend
         private List<ArchiveModel> ArchiveList = new List<ArchiveModel>();
 
         /// <summary>
-        /// Create new Archive studnet
+        /// Create new Archive studnet with existing ArchiveModel data
         /// </summary>
         /// <param name="data"></param>
         /// <returns>Avatar Passed In</returns>

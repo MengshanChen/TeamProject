@@ -57,7 +57,7 @@ namespace TeamProject.Backend
         }
 
         /// <summary>
-        /// Makes a new Archive
+        /// Makes a new Archive object with existing archive model data
         /// </summary>
         /// <param name="data"></param>
         /// <returns>Avatar Passed In</returns>
@@ -101,7 +101,7 @@ namespace TeamProject.Backend
         }
 
         /// <summary>
-        /// Remove the Data item if it is in the list
+        /// Delete the Data item if it is in the list
         /// </summary>
         /// <param name="data"></param>
         /// <returns>True for success, else false</returns>

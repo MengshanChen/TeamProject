@@ -149,35 +149,35 @@ h1 {
     font-weight: bold;
 }
 
-    .homebutton:after {
-        content: "";
-        background: white;
-        height: 1px;
-        width: 26%;
-        display: block;
-        position: absolute;
-        bottom: 50px;
-        left: 37%;
-        transition: all 0.3s ease-out;
-        -webkit-transition: all 0.3s ease-out;
-        -moz-transition: all 0.3s ease-out;
-        -ms-transition: all 0.3s ease-out;
-        -o-transition: all 0.3s ease-out;
-    }
+.homebutton:after {
+    content: "";
+    background: white;
+    height: 1px;
+    width: 26%;
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    left: 37%;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
 
-    .homebutton:hover {
-        color: white;
-    }
+.homebutton:hover {
+    color: white;
+}
 
-        .homebutton:hover:after {
-            width: 70%;
-            left: 15%;
-            transition: all 0.3s ease-out;
-            -webkit-transition: all 0.3s ease-out;
-            -moz-transition: all 0.3s ease-out;
-            -ms-transition: all 0.3s ease-out;
-            -o-transition: all 0.3s ease-out;
-        }
+.homebutton:hover:after {
+    width: 70%;
+    left: 15%;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
 
 /*image text*/
 #filptext {
@@ -201,29 +201,29 @@ h1 {
     overflow: hidden;
 }
 
-    #flip > div > div {
-        color: #fff;
-        padding: 4px 12px;
-        height: 50px;
-        margin-bottom: 45px;
-        display: inline-block;
-    }
+#flip > div > div {
+    color: #fff;
+    padding: 4px 12px;
+    height: 50px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
 
-    #flip div:first-child {
-        animation: show 5s linear infinite;
-    }
+#flip div:first-child {
+    animation: show 5s linear infinite;
+}
 
-    #flip div div {
-        background: #42c58a;
-    }
+#flip div div {
+    background: #42c58a;
+}
 
-    #flip div:first-child div {
-        background: #4ec7f3;
-    }
+#flip div:first-child div {
+    background: #4ec7f3;
+}
 
-    #flip div:last-child div {
-        background: #f8632f;
-    }
+#flip div:last-child div {
+    background: #f8632f;
+}
 
 @keyframes show {
     0% {
@@ -270,118 +270,118 @@ h1 {
     cursor: default;
 }
 
-    .hovereffect .overlay {
-        width: 100%;
-        position: absolute;
-        overflow: hidden;
-        left: 0;
-        top: auto;
-        bottom: 0;
-        padding: 1em;
-        height: 4.75em;
-        background: #79FAC4;
-        color: #3c4a50;
-        -webkit-transition: -webkit-transform 0.35s;
-        transition: transform 0.35s;
-        -webkit-transform: translate3d(0,100%,0);
-        transform: translate3d(0,100%,0);
-        visibility: hidden;
-    }
+.hovereffect .overlay {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    padding: 1em;
+    height: 4.75em;
+    background: #79FAC4;
+    color: #3c4a50;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    visibility: hidden;
+}
 
-    .hovereffect img {
-        display: block;
-        position: relative;
-        -webkit-transition: -webkit-transform 0.35s;
-        transition: transform 0.35s;
-    }
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
 
-    .hovereffect:hover img {
-        -webkit-transform: translate3d(0,-10%,0);
-        transform: translate3d(0,-10%,0);
-    }
+.hovereffect:hover img {
+    -webkit-transform: translate3d(0,-10%,0);
+    transform: translate3d(0,-10%,0);
+}
 
-    .hovereffect h2 {
-        text-transform: uppercase;
-        color: #fff;
-        text-align: center;
-        position: relative;
-        font-size: 17px;
-        padding: 10px;
-        background: rgba(0, 0, 0, 0.6);
-        float: left;
-        margin: 0px;
-    }
+.hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    float: left;
+    margin: 0px;
+}
 
-    .hovereffect a.info {
-        display: inline-block;
-        text-decoration: none;
-        padding: 7px 14px;
-        text-transform: uppercase;
-        color: #fff;
-        border: 1px solid #fff;
-        margin: 50px 0 0 0;
-        background-color: transparent;
-    }
+.hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 50px 0 0 0;
+    background-color: transparent;
+}
 
-        .hovereffect a.info:hover {
-            box-shadow: 0 0 5px #fff;
-        }
+.hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+}
 
 
-    .hovereffect p.icon-links a {
-        float: right;
-        color: #3c4a50;
-        font-size: 1.4em;
-    }
+.hovereffect p.icon-links a {
+    float: right;
+    color: #3c4a50;
+    font-size: 1.4em;
+}
 
-    .hovereffect:hover p.icon-links a:hover,
-    .hovereffect:hover p.icon-links a:focus {
-        color: #083e52;
-    }
+.hovereffect:hover p.icon-links a:hover,
+.hovereffect:hover p.icon-links a:focus {
+    color: #083e52;
+}
 
-    .hovereffect h2,
-    .hovereffect p.icon-links a {
-        -webkit-transition: -webkit-transform 0.35s;
-        transition: transform 0.35s;
-        -webkit-transform: translate3d(0,200%,0);
-        transform: translate3d(0,200%,0);
-        visibility: visible;
-    }
+.hovereffect h2,
+.hovereffect p.icon-links a {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,200%,0);
+    transform: translate3d(0,200%,0);
+    visibility: visible;
+}
 
-        .hovereffect p.icon-links a span:before {
-            display: inline-block;
-            padding: 8px 10px;
-            speak: none;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
+.hovereffect p.icon-links a span:before {
+    display: inline-block;
+    padding: 8px 10px;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
-    .hovereffect:hover .overlay,
-    .hovereffect:hover h2,
-    .hovereffect:hover p.icon-links a {
-        -webkit-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);
-    }
+.hovereffect:hover .overlay,
+.hovereffect:hover h2,
+.hovereffect:hover p.icon-links a {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
 
-    .hovereffect:hover h2 {
-        -webkit-transition-delay: 0.05s;
-        transition-delay: 0.05s;
-    }
+.hovereffect:hover h2 {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
 
-    .hovereffect:hover p.icon-links a:nth-child(3) {
-        -webkit-transition-delay: 0.1s;
-        transition-delay: 0.1s;
-    }
+.hovereffect:hover p.icon-links a:nth-child(3) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
 
-    .hovereffect:hover p.icon-links a:nth-child(2) {
-        -webkit-transition-delay: 0.15s;
-        transition-delay: 0.15s;
-    }
+.hovereffect:hover p.icon-links a:nth-child(2) {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
 
-    .hovereffect:hover p.icon-links a:first-child {
-        -webkit-transition-delay: 0.2s;
-        transition-delay: 0.2s;
-    }
+.hovereffect:hover p.icon-links a:first-child {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
 
 
 /*home copy right*/
@@ -391,8 +391,6 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
 }
-
-
 
 
 /*-----login page-----*/
@@ -557,54 +555,53 @@ h1 {
     width: 100%;
 }
 
-    /*image style*/
-    .forgotpassword-style img {
-        width: 100%;
-        height: auto;
-    }
+/*image style*/
+.forgotpassword-style img {
+    width: 100%;
+    height: auto;
+}
 
-    /*button style1*/
-    .forgotpassword-style .btn-1 {
-        position: absolute;
-        top: 83%;
-        left: 72%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        background-color: #083e52;
-        color: white;
-        font-size: 16px;
-        padding: 16px 40px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        text-align: center;
-    }
+/*button style1*/
+.forgotpassword-style .btn-1 {
+    position: absolute;
+    top: 83%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #083e52;
+    color: white;
+    font-size: 16px;
+    padding: 16px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
 
-    /*button style 2*/
-    .forgotpassword-style .btn-2 {
-        position: absolute;
-        top: 77.5%;
-        left: 82%;
-        background-color: #119A8E;
-        color: white;
-        font-size: 16px;
-        padding: 18px 42px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        text-align: center;
-    }
+/*button style 2*/
+.forgotpassword-style .btn-2 {
+    position: absolute;
+    top: 77.5%;
+    left: 82%;
+    background-color: #119A8E;
+    color: white;
+    font-size: 16px;
+    padding: 18px 42px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
 
-    /*form style*/
-    .forgotpassword-style .form-control {
-        position: absolute;
-        top: 58%;
-        left: 63.1%;
-        font-size: 24px;
-        padding: 30px 30px;
-        max-width: 430px
-    }
-
+/*form style*/
+.forgotpassword-style .form-control {
+    position: absolute;
+    top: 58%;
+    left: 63.1%;
+    font-size: 24px;
+    padding: 30px 30px;
+    max-width: 430px
+}
 
 
 /*-----update password page-----*/
@@ -632,67 +629,63 @@ h1 {
     width: 100%;
 }
 
-    /*image style*/
-    .updatepassword-style img {
-        width: 100%;
-        height: auto;
-    }
+/*image style*/
+.updatepassword-style img {
+    width: 100%;
+    height: auto;
+}
 
-    /*button style1*/
-    .updatepassword-style .btn-1 {
-        position: absolute;
-        top: 83%;
-        left: 72%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        background-color: #083e52;
-        color: white;
-        font-size: 16px;
-        padding: 16px 52px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        text-align: center;
-    }
+/*button style1*/
+.updatepassword-style .btn-1 {
+    position: absolute;
+    top: 83%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #083e52;
+    color: white;
+    font-size: 16px;
+    padding: 16px 52px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
 
-    /*button style2*/
-    .updatepassword-style .btn-2 {
-        position: absolute;
-        top: 77.4%;
-        left: 82%;
-        background-color: #119A8E;
-        color: white;
-        font-size: 16px;
-        padding: 17.5px 68px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        text-align: center;
-    }
+/*button style2*/
+.updatepassword-style .btn-2 {
+    position: absolute;
+    top: 77.4%;
+    left: 82%;
+    background-color: #119A8E;
+    color: white;
+    font-size: 16px;
+    padding: 17.5px 68px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
 
-    /*form style 1*/
-    .updatepassword-style .form-control1 {
-        position: absolute;
-        top: 38.1%;
-        left: 63.1%;
-        font-size: 24px;
-        padding: 12px 10px;
-        max-width: 425px
-    }
+/*form style 1*/
+.updatepassword-style .form-control1 {
+    position: absolute;
+    top: 38.1%;
+    left: 63.1%;
+    font-size: 24px;
+    padding: 12px 10px;
+    max-width: 425px
+}
 
-    /*form style 2*/
-    .updatepassword-style .form-control2 {
-        position: absolute;
-        top: 58.6%;
-        left: 63.1%;
-        font-size: 24px;
-        padding: 12px 10px;
-        max-width: 425px
-    }
-
-
-
-
+/*form style 2*/
+.updatepassword-style .form-control2 {
+    position: absolute;
+    top: 58.6%;
+    left: 63.1%;
+    font-size: 24px;
+    padding: 12px 10px;
+    max-width: 425px
+}
 
 
 /*--------------------Kiosk controller--------------------*/
@@ -755,9 +748,9 @@ a, a:visited {
     outline: none;
 }
 
-    a:hover {
-        text-decoration: none;
-    }
+a:hover {
+    text-decoration: none;
+}
 
 section, footer, header, aside {
     display: block;
@@ -770,370 +763,366 @@ section, footer, header, aside {
     position: relative;
 }
 
-    #clock:after {
-        content: '';
-        position: absolute;
-        width: 400px;
-        height: 20px;
-        border-radius: 100%;
-        left: 50%;
-        margin-left: -200px;
-        bottom: 2px;
-        z-index: -1;
-    }
+#clock:after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 20px;
+    border-radius: 100%;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 2px;
+    z-index: -1;
+}
 
 
-    #clock .display {
-        text-align: center;
-        padding: 40px 20px 20px;
-        border-radius: 6px;
-        position: relative;
-        height: 130px;
-    }
+#clock .display {
+    text-align: center;
+    padding: 40px 20px 20px;
+    border-radius: 6px;
+    position: relative;
+    height: 130px;
+}
 
-    #clock.light {
-        background-color: #f3f3f3;
-        color: #272e38;
-    }
+#clock.light {
+    background-color: #f3f3f3;
+    color: #272e38;
+}
 
-        #clock.light:after {
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        }
+#clock.light:after {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
 
-        #clock.light .digits div span {
-            background-color: #272e38;
-            border-color: #272e38;
-        }
+#clock.light .digits div span {
+    background-color: #272e38;
+    border-color: #272e38;
+}
 
-        #clock.light .digits div.dots:before,
-        #clock.light .digits div.dots:after {
-            background-color: #272e38;
-        }
+#clock.light .digits div.dots:before,
+#clock.light .digits div.dots:after {
+    background-color: #272e38;
+}
 
-        #clock.light .alarm {
-            background: url('../img/alarm_light.jpg');
-        }
+#clock.light .alarm {
+    background: url('../img/alarm_light.jpg');
+}
 
-        #clock.light .display {
-            background-color: #dddddd;
-            box-shadow: 0 1px 1px rgba(0,0,0,0.08) inset, 0 1px 1px #fafafa;
-        }
+#clock.light .display {
+    background-color: #dddddd;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.08) inset, 0 1px 1px #fafafa;
+}
 
-    /*-----The Digits of clock--------*/
-    #clock .digits div {
-        text-align: left;
-        position: relative;
-        width: 28px;
-        height: 50px;
-        display: inline-block;
-        margin: 0 4px;
-    }
+/*-----The Digits of clock--------*/
+#clock .digits div {
+    text-align: left;
+    position: relative;
+    width: 28px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 4px;
+}
 
-        #clock .digits div span {
-            opacity: 0;
-            position: absolute;
-            -webkit-transition: 0.25s;
-            -moz-transition: 0.25s;
-            transition: 0.25s;
-        }
+#clock .digits div span {
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+}
 
-            #clock .digits div span:before,
-            #clock .digits div span:after {
-                content: '';
-                position: absolute;
-                width: 0;
-                height: 0;
-                border: 5px solid transparent;
-            }
+#clock .digits div span:before,
+#clock .digits div span:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+}
 
-    #clock .digits .d1 {
-        height: 5px;
-        width: 16px;
-        top: 0;
-        left: 6px;
-    }
+#clock .digits .d1 {
+    height: 5px;
+    width: 16px;
+    top: 0;
+    left: 6px;
+}
 
-        #clock .digits .d1:before {
-            border-width: 0 5px 5px 0;
-            border-right-color: inherit;
-            left: -5px;
-        }
+#clock .digits .d1:before {
+    border-width: 0 5px 5px 0;
+    border-right-color: inherit;
+    left: -5px;
+}
 
-        #clock .digits .d1:after {
-            border-width: 0 0 5px 5px;
-            border-left-color: inherit;
-            right: -5px;
-        }
+#clock .digits .d1:after {
+    border-width: 0 0 5px 5px;
+    border-left-color: inherit;
+    right: -5px;
+}
 
-    #clock .digits .d2 {
-        height: 5px;
-        width: 16px;
-        top: 24px;
-        left: 6px;
-    }
+#clock .digits .d2 {
+    height: 5px;
+    width: 16px;
+    top: 24px;
+    left: 6px;
+}
 
-        #clock .digits .d2:before {
-            border-width: 3px 4px 2px;
-            border-right-color: inherit;
-            left: -8px;
-        }
+#clock .digits .d2:before {
+    border-width: 3px 4px 2px;
+    border-right-color: inherit;
+    left: -8px;
+}
 
-        #clock .digits .d2:after {
-            border-width: 3px 4px 2px;
-            border-left-color: inherit;
-            right: -8px;
-        }
+#clock .digits .d2:after {
+    border-width: 3px 4px 2px;
+    border-left-color: inherit;
+    right: -8px;
+}
 
-    #clock .digits .d3 {
-        height: 5px;
-        width: 16px;
-        top: 48px;
-        left: 6px;
-    }
+#clock .digits .d3 {
+    height: 5px;
+    width: 16px;
+    top: 48px;
+    left: 6px;
+}
 
-        #clock .digits .d3:before {
-            border-width: 5px 5px 0 0;
-            border-right-color: inherit;
-            left: -5px;
-        }
+#clock .digits .d3:before {
+    border-width: 5px 5px 0 0;
+    border-right-color: inherit;
+    left: -5px;
+}
 
-        #clock .digits .d3:after {
-            border-width: 5px 0 0 5px;
-            border-left-color: inherit;
-            right: -5px;
-        }
+#clock .digits .d3:after {
+    border-width: 5px 0 0 5px;
+    border-left-color: inherit;
+    right: -5px;
+}
 
-    #clock .digits .d4 {
-        width: 5px;
-        height: 14px;
-        top: 7px;
-        left: 0;
-    }
+#clock .digits .d4 {
+    width: 5px;
+    height: 14px;
+    top: 7px;
+    left: 0;
+}
 
-        #clock .digits .d4:before {
-            border-width: 0 5px 5px 0;
-            border-bottom-color: inherit;
-            top: -5px;
-        }
+#clock .digits .d4:before {
+    border-width: 0 5px 5px 0;
+    border-bottom-color: inherit;
+    top: -5px;
+}
 
-        #clock .digits .d4:after {
-            border-width: 0 0 5px 5px;
-            border-left-color: inherit;
-            bottom: -5px;
-        }
+#clock .digits .d4:after {
+    border-width: 0 0 5px 5px;
+    border-left-color: inherit;
+    bottom: -5px;
+}
 
-    #clock .digits .d5 {
-        width: 5px;
-        height: 14px;
-        top: 7px;
-        right: 0;
-    }
+#clock .digits .d5 {
+    width: 5px;
+    height: 14px;
+    top: 7px;
+    right: 0;
+}
 
-        #clock .digits .d5:before {
-            border-width: 0 0 5px 5px;
-            border-bottom-color: inherit;
-            top: -5px;
-        }
+#clock .digits .d5:before {
+    border-width: 0 0 5px 5px;
+    border-bottom-color: inherit;
+    top: -5px;
+}
 
-        #clock .digits .d5:after {
-            border-width: 5px 0 0 5px;
-            border-top-color: inherit;
-            bottom: -5px;
-        }
+#clock .digits .d5:after {
+    border-width: 5px 0 0 5px;
+    border-top-color: inherit;
+    bottom: -5px;
+}
 
-    #clock .digits .d6 {
-        width: 5px;
-        height: 14px;
-        top: 32px;
-        left: 0;
-    }
+#clock .digits .d6 {
+    width: 5px;
+    height: 14px;
+    top: 32px;
+    left: 0;
+}
 
-        #clock .digits .d6:before {
-            border-width: 0 5px 5px 0;
-            border-bottom-color: inherit;
-            top: -5px;
-        }
+#clock .digits .d6:before {
+    border-width: 0 5px 5px 0;
+    border-bottom-color: inherit;
+    top: -5px;
+}
 
-        #clock .digits .d6:after {
-            border-width: 0 0 5px 5px;
-            border-left-color: inherit;
-            bottom: -5px;
-        }
+#clock .digits .d6:after {
+    border-width: 0 0 5px 5px;
+    border-left-color: inherit;
+    bottom: -5px;
+}
 
-    #clock .digits .d7 {
-        width: 5px;
-        height: 14px;
-        top: 32px;
-        right: 0;
-    }
+#clock .digits .d7 {
+    width: 5px;
+    height: 14px;
+    top: 32px;
+    right: 0;
+}
 
-        #clock .digits .d7:before {
-            border-width: 0 0 5px 5px;
-            border-bottom-color: inherit;
-            top: -5px;
-        }
+#clock .digits .d7:before {
+    border-width: 0 0 5px 5px;
+    border-bottom-color: inherit;
+    top: -5px;
+}
 
-        #clock .digits .d7:after {
-            border-width: 5px 0 0 5px;
-            border-top-color: inherit;
-            bottom: -5px;
-        }
-
-
-    /* 1 */
-    #clock .digits div.one .d5,
-    #clock .digits div.one .d7 {
-        opacity: 1;
-    }
-
-    /* 2 */
-    #clock .digits div.two .d1,
-    #clock .digits div.two .d5,
-    #clock .digits div.two .d2,
-    #clock .digits div.two .d6,
-    #clock .digits div.two .d3 {
-        opacity: 1;
-    }
-
-    /* 3 */
-    #clock .digits div.three .d1,
-    #clock .digits div.three .d5,
-    #clock .digits div.three .d2,
-    #clock .digits div.three .d7,
-    #clock .digits div.three .d3 {
-        opacity: 1;
-    }
-
-    /* 4 */
-    #clock .digits div.four .d5,
-    #clock .digits div.four .d2,
-    #clock .digits div.four .d4,
-    #clock .digits div.four .d7 {
-        opacity: 1;
-    }
-
-    /* 5 */
-    #clock .digits div.five .d1,
-    #clock .digits div.five .d2,
-    #clock .digits div.five .d4,
-    #clock .digits div.five .d3,
-    #clock .digits div.five .d7 {
-        opacity: 1;
-    }
-
-    /* 6 */
-    #clock .digits div.six .d1,
-    #clock .digits div.six .d2,
-    #clock .digits div.six .d4,
-    #clock .digits div.six .d3,
-    #clock .digits div.six .d6,
-    #clock .digits div.six .d7 {
-        opacity: 1;
-    }
+#clock .digits .d7:after {
+    border-width: 5px 0 0 5px;
+    border-top-color: inherit;
+    bottom: -5px;
+}
 
 
-    /* 7 */
-    #clock .digits div.seven .d1,
-    #clock .digits div.seven .d5,
-    #clock .digits div.seven .d7 {
-        opacity: 1;
-    }
+/* 1 */
+#clock .digits div.one .d5,
+#clock .digits div.one .d7 {
+    opacity: 1;
+}
 
-    /* 8 */
-    #clock .digits div.eight .d1,
-    #clock .digits div.eight .d2,
-    #clock .digits div.eight .d3,
-    #clock .digits div.eight .d4,
-    #clock .digits div.eight .d5,
-    #clock .digits div.eight .d6,
-    #clock .digits div.eight .d7 {
-        opacity: 1;
-    }
+/* 2 */
+#clock .digits div.two .d1,
+#clock .digits div.two .d5,
+#clock .digits div.two .d2,
+#clock .digits div.two .d6,
+#clock .digits div.two .d3 {
+    opacity: 1;
+}
 
-    /* 9 */
-    #clock .digits div.nine .d1,
-    #clock .digits div.nine .d2,
-    #clock .digits div.nine .d3,
-    #clock .digits div.nine .d4,
-    #clock .digits div.nine .d5,
-    #clock .digits div.nine .d7 {
-        opacity: 1;
-    }
+/* 3 */
+#clock .digits div.three .d1,
+#clock .digits div.three .d5,
+#clock .digits div.three .d2,
+#clock .digits div.three .d7,
+#clock .digits div.three .d3 {
+    opacity: 1;
+}
 
-    /* 0 */
-    #clock .digits div.zero .d1,
-    #clock .digits div.zero .d3,
-    #clock .digits div.zero .d4,
-    #clock .digits div.zero .d5,
-    #clock .digits div.zero .d6,
-    #clock .digits div.zero .d7 {
-        opacity: 1;
-    }
+/* 4 */
+#clock .digits div.four .d5,
+#clock .digits div.four .d2,
+#clock .digits div.four .d4,
+#clock .digits div.four .d7 {
+    opacity: 1;
+}
 
-    /*-----The dots--------*/
-    #clock .digits div.dots {
-        width: 5px;
-    }
+/* 5 */
+#clock .digits div.five .d1,
+#clock .digits div.five .d2,
+#clock .digits div.five .d4,
+#clock .digits div.five .d3,
+#clock .digits div.five .d7 {
+    opacity: 1;
+}
 
-        #clock .digits div.dots:before,
-        #clock .digits div.dots:after {
-            width: 5px;
-            height: 5px;
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 14px;
-        }
-
-        #clock .digits div.dots:after {
-            top: 34px;
-        }
-
-    /*-----The Alarm--------*/
-    #clock .alarm {
-        width: 16px;
-        height: 16px;
-        bottom: 20px;
-        background: url('../img/alarm_light.jpg');
-        position: absolute;
-        opacity: 0.2;
-    }
-
-        #clock .alarm.active {
-            opacity: 1;
-        }
-
-    /*-----Weekdays--------*/
-    #clock .weekdays {
-        font-size: 12px;
-        position: absolute;
-        width: 100%;
-        top: 10px;
-        left: 0;
-        text-align: center;
-    }
-
-        #clock .weekdays span {
-            opacity: 0.2;
-            padding: 0 10px;
-        }
-
-            #clock .weekdays span.active {
-                opacity: 1;
-            }
+/* 6 */
+#clock .digits div.six .d1,
+#clock .digits div.six .d2,
+#clock .digits div.six .d4,
+#clock .digits div.six .d3,
+#clock .digits div.six .d6,
+#clock .digits div.six .d7 {
+    opacity: 1;
+}
 
 
-    /*-----AM/PM--------*/
-    #clock .ampm {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        font-size: 12px;
-    }
+/* 7 */
+#clock .digits div.seven .d1,
+#clock .digits div.seven .d5,
+#clock .digits div.seven .d7 {
+    opacity: 1;
+}
+
+/* 8 */
+#clock .digits div.eight .d1,
+#clock .digits div.eight .d2,
+#clock .digits div.eight .d3,
+#clock .digits div.eight .d4,
+#clock .digits div.eight .d5,
+#clock .digits div.eight .d6,
+#clock .digits div.eight .d7 {
+    opacity: 1;
+}
+
+/* 9 */
+#clock .digits div.nine .d1,
+#clock .digits div.nine .d2,
+#clock .digits div.nine .d3,
+#clock .digits div.nine .d4,
+#clock .digits div.nine .d5,
+#clock .digits div.nine .d7 {
+    opacity: 1;
+}
+
+/* 0 */
+#clock .digits div.zero .d1,
+#clock .digits div.zero .d3,
+#clock .digits div.zero .d4,
+#clock .digits div.zero .d5,
+#clock .digits div.zero .d6,
+#clock .digits div.zero .d7 {
+    opacity: 1;
+}
+
+/*-----The dots--------*/
+#clock .digits div.dots {
+    width: 5px;
+}
+
+#clock .digits div.dots:before,
+#clock .digits div.dots:after {
+    width: 5px;
+    height: 5px;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+}
+
+#clock .digits div.dots:after {
+    top: 34px;
+}
+
+/*-----The Alarm--------*/
+#clock .alarm {
+    width: 16px;
+    height: 16px;
+    bottom: 20px;
+    background: url('../img/alarm_light.jpg');
+    position: absolute;
+    opacity: 0.2;
+}
+
+#clock .alarm.active {
+    opacity: 1;
+}
+
+/*-----Weekdays--------*/
+#clock .weekdays {
+    font-size: 12px;
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    left: 0;
+    text-align: center;
+}
+
+#clock .weekdays span {
+    opacity: 0.2;
+    padding: 0 10px;
+}
+
+#clock .weekdays span.active {
+    opacity: 1;
+}
 
 
-
-
+/*-----AM/PM--------*/
+#clock .ampm {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 12px;
+}
 
 
 /*--------------------Admin controller--------------------*/
@@ -1192,27 +1181,27 @@ section, footer, header, aside {
     width: 100%;
 }
 
-    /*profile image*/
-    .profile img {
-        width: 100%;
-        height: auto;
-    }
+/*profile image*/
+.profile img {
+    width: 100%;
+    height: auto;
+}
 
-    /*profile button*/
-    .profile .btn-1 {
-        position: absolute;
-        top: 73%;
-        left: 69%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        color: white;
-        font-size: 16px;
-        padding: 16px 40px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        text-align: center;
-    }
+/*profile button*/
+.profile .btn-1 {
+    position: absolute;
+    top: 73%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 16px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
 
 
 
@@ -1251,79 +1240,79 @@ section, footer, header, aside {
     margin-bottom: 20px;
 }
 
-    .searchFilter.btn {
-        display: inline-block;
-        font-weight: 400;
-        line-height: 1.25;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: middle;
-        cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        border: 1px solid transparent;
-        padding: .5rem 1rem;
-        font-size: 16px;
-        border-radius: .25rem;
-        height: 50px;
-        min-width: 20px;
-    }
+.searchFilter.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    font-size: 16px;
+    border-radius: .25rem;
+    height: 50px;
+    min-width: 20px;
+}
 
-    .searchFilter .btn-secondary {
-        color: #373a3c;
-        background-color: #fff;
-        border: 1px solid #ccc;
-    }
+.searchFilter .btn-secondary {
+    color: #373a3c;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
 
-        .searchFilter .btn-secondary:hover {
-            color: #373a3c;
-            background-color: #e6e6e6;
-            border-color: #adadad;
-        }
+.searchFilter .btn-secondary:hover {
+    color: #373a3c;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
 
-    .searchFilter .btn-search {
-        background-color: #00aced;
-        color: #fff;
-        border: 1px solid #00aced;
-    }
+.searchFilter .btn-search {
+    background-color: #00aced;
+    color: #fff;
+    border: 1px solid #00aced;
+}
 
-        .searchFilter .btn-search:hover {
-            background-color: #b20a11;
-            color: #fff;
-            border: 1px solid #b20a11;
-        }
+.searchFilter .btn-search:hover {
+    background-color: #b20a11;
+    color: #fff;
+    border: 1px solid #b20a11;
+}
 
-    .searchFilter .label-icon {
-        display: none;
-    }
+.searchFilter .label-icon {
+    display: none;
+}
 
-    .searchFilter .glyphicon {
-        margin-right: -15px;
-    }
+.searchFilter .glyphicon {
+    margin-right: -15px;
+}
 
-    .searchFilter .dropdown-menu .category_filters {
-        min-width: 178px;
-        width: 100%;
-        margin: 15px 0 0 -25px;
-    }
+.searchFilter .dropdown-menu .category_filters {
+    min-width: 178px;
+    width: 100%;
+    margin: 15px 0 0 -25px;
+}
 
-    .searchFilter .dropdown-menu-right {
-        right: 170px;
-        min-width: 175px;
-        top: 90%;
-    }
+.searchFilter .dropdown-menu-right {
+    right: 170px;
+    min-width: 175px;
+    top: 90%;
+}
 
-    .searchFilter .dropdown-menu .category_filters li {
-        list-style-type: none;
-        padding: 2px 10px;
-        font-size: 18px;
-    }
+.searchFilter .dropdown-menu .category_filters li {
+    list-style-type: none;
+    padding: 2px 10px;
+    font-size: 18px;
+}
 
-    .searchFilter .dropdown-menu .category_filters label {
-        margin-left: 15px;
-    }
+.searchFilter .dropdown-menu .category_filters label {
+    margin-left: 15px;
+}
 
 @media (min-width: 1400px) {
     .ct-header .ct-jumbotron .inner {
@@ -1410,9 +1399,9 @@ section, footer, header, aside {
         margin-top: 5%;
     }
 
-        .ct-header .ct-jumbotron h1 {
-            font-size: 2.5em;
-        }
+    .ct-header .ct-jumbotron h1 {
+        font-size: 2.5em;
+    }
 
     .ct-news.ct-news--bigger h3 {
         font-size: 41px;
@@ -1428,9 +1417,9 @@ section, footer, header, aside {
         width: 95%;
     }
 
-        .ct-header .ct-jumbotron .inner {
-            max-width: 100%;
-        }
+    .ct-header .ct-jumbotron .inner {
+        max-width: 100%;
+    }
 
     #dots-container {
         display: none;
@@ -1444,7 +1433,6 @@ section, footer, header, aside {
         right: 0px;
     }
 }
-
 
 
 /*-----calendar page-----*/
@@ -1630,9 +1618,9 @@ section, footer, header, aside {
     left: 25px;
 }
 
-    .burger-line:hover, .hamburger:hover {
-        background-color: #27e879 !important;
-    }
+.burger-line:hover, .hamburger:hover {
+    background-color: #27e879 !important;
+}
 
 .burger-line {
     width: 25px;
@@ -1668,9 +1656,9 @@ section, footer, header, aside {
     text-decoration: underline dotted;
 }
 
-    .posts:hover {
-        color: #27e879 !important;
-    }
+.posts:hover {
+    color: #27e879 !important;
+}
 
 .create-event {
     font-size: 18px;
@@ -1737,29 +1725,29 @@ tr:nth-child(even) {
 #overwritedata-search {
 }
 
-    #overwritedata-search input[type="text"] {
-        background: url(search-white.png) no-repeat 10px 6px #fcfcfc;
-        border: 1px solid #d1d1d1;
-        font: bold 12px Arial,Helvetica,Sans-serif;
-        color: #bebebe;
-        width: 150px;
-        padding: 6px 15px 6px 35px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        border-radius: 20px;
-        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
-        -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
-        -webkit-transition: all 0.7s ease 0s;
-        -moz-transition: all 0.7s ease 0s;
-        -o-transition: all 0.7s ease 0s;
-        transition: all 0.7s ease 0s;
-    }
+#overwritedata-search input[type="text"] {
+    background: url(search-white.png) no-repeat 10px 6px #fcfcfc;
+    border: 1px solid #d1d1d1;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #bebebe;
+    width: 150px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+}
 
-        #overwritedata-search input[type="text"]:focus {
-            width: 200px;
-        }
+#overwritedata-search input[type="text"]:focus {
+    width: 200px;
+}
 
 /*overwrite data button*/
 .overwritedata-button {
@@ -1804,70 +1792,67 @@ tr:nth-child(even) {
     width: 100%;
 }
 
-    .adminregister img {
-        width: 100%;
-        height: auto;
-    }
+.adminregister img {
+    width: 100%;
+    height: auto;
+}
 
-    .adminregister .btn-1 {
-        position: absolute;
-        top: 86.5%;
-        left: 72.3%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        background-color: #083e52;
-        color: white;
-        font-size: 16px;
-        padding: 16px 65px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        text-align: center;
-    }
+.adminregister .btn-1 {
+    position: absolute;
+    top: 86.5%;
+    left: 72.3%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #083e52;
+    color: white;
+    font-size: 16px;
+    padding: 16px 65px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
 
-    .adminregister .btn-2 {
-        position: absolute;
-        top: 82%;
-        left: 82.1%;
-        background-color: #119A8E;
-        color: white;
-        font-size: 16px;
-        padding: 16px 60px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        text-align: center;
-    }
+.adminregister .btn-2 {
+    position: absolute;
+    top: 82%;
+    left: 82.1%;
+    background-color: #119A8E;
+    color: white;
+    font-size: 16px;
+    padding: 16px 60px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
 
-    .adminregister .form-control1 {
-        position: absolute;
-        top: 38%;
-        left: 63.4%;
-        font-size: 24px;
-        padding: 12px 10px;
-        max-width: 423px;
-    }
+.adminregister .form-control1 {
+    position: absolute;
+    top: 38%;
+    left: 63.4%;
+    font-size: 24px;
+    padding: 12px 10px;
+    max-width: 423px;
+}
 
-    .adminregister .form-control2 {
-        position: absolute;
-        top: 54%;
-        left: 63.4%;
-        font-size: 24px;
-        padding: 12px 10px;
-        max-width: 423px;
-    }
+.adminregister .form-control2 {
+    position: absolute;
+    top: 54%;
+    left: 63.4%;
+    font-size: 24px;
+    padding: 12px 10px;
+    max-width: 423px;
+}
 
-    .adminregister .form-control3 {
-        position: absolute;
-        top: 70%;
-        left: 63.4%;
-        font-size: 24px;
-        padding: 12px 10px;
-        max-width: 423px;
-    }
-
-
-
+.adminregister .form-control3 {
+    position: absolute;
+    top: 70%;
+    left: 63.4%;
+    font-size: 24px;
+    padding: 12px 10px;
+    max-width: 423px;
+}
 
 
 /*--------------------Student controller--------------------*/
@@ -1907,9 +1892,9 @@ studentdashboard-img {
     border-color: #083e52;
 }
 
-    .navbar-inverse .navbar-nav > li > a {
-        color: white;
-    }
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
 
 .btn-link {
     color: #083e52;
@@ -2013,73 +1998,73 @@ blockquote {
     cursor: default;
 }
 
-    .coin-effect .overlay {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        overflow: hidden;
-        top: 0;
-        left: 0;
-    }
+.coin-effect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
 
-    .coin-effect img {
-        display: block;
-        position: relative;
-        -webkit-transition: all 0.4s ease-in;
-        transition: all 0.4s ease-in;
-    }
+.coin-effect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
 
-    .coin-effect:hover img {
-        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
-        filter: grayscale(1) blur(3px);
-        -webkit-filter: grayscale(1) blur(3px);
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2);
-    }
+.coin-effect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+    filter: grayscale(1) blur(3px);
+    -webkit-filter: grayscale(1) blur(3px);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
 
-    .coin-effect h2 {
-        text-transform: uppercase;
-        text-align: center;
-        position: relative;
-        font-size: 17px;
-        padding: 40px;
-        background: rgba(0, 0, 0, 0.6);
-        margin-top: 100px;
-    }
+.coin-effect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 100px;
+}
 
-    .coin-effect a.info {
-        display: inline-block;
-        text-decoration: none;
-        padding: 7px 14px;
-        border: 1px solid #fff;
-        margin: 50px 0 0 0;
-        background-color: transparent;
-    }
+.coin-effect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    border: 1px solid #fff;
+    margin: 50px 0 0 0;
+    background-color: transparent;
+}
 
-        .coin-effect a.info:hover {
-            box-shadow: 0 0 5px #fff;
-        }
+.coin-effect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+}
 
-    .coin-effect a.info, .coin-effect h2 {
-        -webkit-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-        transform: scale(0.7);
-        -webkit-transition: all 0.4s ease-in;
-        transition: all 0.4s ease-in;
-        opacity: 0;
-        filter: alpha(opacity=0);
-        color: #fff;
-        text-transform: uppercase;
-    }
+.coin-effect a.info, .coin-effect h2 {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    color: #fff;
+    text-transform: uppercase;
+}
 
-    .coin-effect:hover a.info, .coin-effect:hover h2 {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-    }
+.coin-effect:hover a.info, .coin-effect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
 
 /*coin message*/
 .coin_message {
@@ -2125,10 +2110,10 @@ blockquote {
     margin: 0;
 }
 
-    .game-container img {
-        width: 100%;
-        height: auto;
-    }
+.game-container img {
+    width: 100%;
+    height: auto;
+}
 
 /* Centered In Bottom Half */
 .bottom {
@@ -2166,14 +2151,14 @@ blockquote {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.3);
 }
 
-    /* game-button Shadow Hover Settings */
-    .game-button:hover {
-        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-    }
+/* game-button Shadow Hover Settings */
+.game-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
-    .game-button a:visited {
-        color: white;
-    }
+.game-button a:visited {
+    color: white;
+}
 
 
 /*-----game info page-----*/
@@ -2187,27 +2172,26 @@ blockquote {
     margin-top: -60px;
 }
 
-   
 
-    #gameinfo-style > section {
-        width: 66%;
-        float: left;
-    }
+#gameinfo-style > section {
+    width: 66%;
+    float: left;
+}
 
-    #gameinfo-style > aside {
-        padding: 30px;
-        width: 32%;
-        float: left;
-    }
+#gameinfo-style > aside {
+    padding: 30px;
+    width: 32%;
+    float: left;
+}
 
-    #gameinfo-style > aside > h1 {
-        margin-top:30px;
-        margin-bottom: 20px;
-        font-family: Stencil;
-        color: black;
-        font-size: 30px;
-        float: left;
-    }
+#gameinfo-style > aside > h1 {
+    margin-top:30px;
+    margin-bottom: 20px;
+    font-family: Stencil;
+    color: black;
+    font-size: 30px;
+    float: left;
+}
 
 .gameinfo-img {
     margin-top: 10px;
@@ -2373,70 +2357,70 @@ blockquote {
     cursor: default;
 }
 
-    .select-effect .overlay {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        overflow: hidden;
-        top: 0;
-        left: 0;
-    }
+.select-effect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
 
-    .select-effect img {
-        display: block;
-        position: relative;
-        -webkit-transition: all 0.4s ease-in;
-        transition: all 0.4s ease-in;
-    }
+.select-effect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
 
-    .select-effect:hover img {
-        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
-        filter: grayscale(1) blur(3px);
-        -webkit-filter: grayscale(1) blur(3px);
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2);
-    }
+.select-effect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+    filter: grayscale(1) blur(3px);
+    -webkit-filter: grayscale(1) blur(3px);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
 
-    .select-effect h2 {
-        text-transform: uppercase;
-        text-align: center;
-        position: relative;
-        font-size: 17px;
-        padding: 40px;
-        background: rgba(0, 0, 0, 0.6);
-        margin-top: 100px;
-    }
+.select-effect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 100px;
+}
 
-    .select-effect a.info {
-        display: inline-block;
-        text-decoration: none;
-        padding: 7px 14px;
-        border: 1px solid #fff;
-        margin: 50px 0 0 0;
-        background-color: transparent;
-    }
+.select-effect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    border: 1px solid #fff;
+    margin: 50px 0 0 0;
+    background-color: transparent;
+}
 
-        .select-effect a.info:hover {
-            box-shadow: 0 0 5px #fff;
-        }
+.select-effect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+}
 
-    .select-effect a.info, .select-effect h2 {
-        -webkit-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-        transform: scale(0.7);
-        -webkit-transition: all 0.4s ease-in;
-        transition: all 0.4s ease-in;
-        opacity: 0;
-        filter: alpha(opacity=0);
-        color: #fff;
-        text-transform: uppercase;
-    }
+.select-effect a.info, .select-effect h2 {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    color: #fff;
+    text-transform: uppercase;
+}
 
-    .select-effect:hover a.info, .select-effect:hover h2 {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-    }
+.select-effect:hover a.info, .select-effect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}

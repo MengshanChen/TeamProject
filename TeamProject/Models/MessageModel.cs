@@ -27,26 +27,33 @@ namespace TeamProject.Models
 
 
         /// <summary>
-        /// The default for the new archive student info
+        /// The default for the new message
         /// </summary>
         public void Initialize()
         {
             Id = Guid.NewGuid().ToString();
         }
 
-
+        /// <summary>
+        /// constructor with default message "Leave Message Here"
+        /// </summary>
         public MessageModel()
         {
             Initialize();
             Message = "Leave Message Here";
         }
 
+        /// <summary>
+        /// constructor with string parameter for message
+        /// </summary>
+        /// <param name="message"></param>
         public MessageModel(string message)
         {
             Initialize();
             Message = message;
         }
 
+        // constructor with MessageModel data to copy it
         public MessageModel(MessageModel data)
         {
             Id = data.Id;

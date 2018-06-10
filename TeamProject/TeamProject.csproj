@@ -191,8 +191,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\AboutBackground.jpg" />
     <Content Include="Content\Images\admin profile background.png" />
-    <Content Include="Content\Images\admin register.png" />
-    <Content Include="Content\Images\admin setting.png" />
     <Content Include="Content\Images\attendance list dashboard.png" />
     <Content Include="Content\Images\calendar on dashboard.png" />
     <Content Include="Content\Images\calendar on dashboard1.png" />
@@ -226,10 +224,6 @@
     <Content Include="Content\Images\man03.jpg" />
     <Content Include="Content\Images\man04.jpg" />
     <Content Include="Content\Images\man05.jpg" />
-    <Content Include="Content\Images\man3.jpg" />
-    <Content Include="Content\Images\man4.jpg" />
-    <Content Include="Content\Images\man5.jpg" />
-    <Content Include="Content\Images\market.jpg" />
     <Content Include="Content\Images\Menkaure pyramid.png" />
     <Content Include="Content\Images\Mid speed.png" />
     <Content Include="Content\Images\museum2.jpg" />
@@ -253,8 +247,6 @@
     <Content Include="Content\Images\girl2.jpg" />
     <Content Include="Content\Images\boy1.jpg" />
     <Content Include="Content\Images\boy2.jpg" />
-    <Content Include="Content\Images\overwrite data.png" />
-    <Content Include="Content\Images\Report.png" />
     <Content Include="Content\Images\Student Dashboard\attendance record dashboard final.png" />
     <Content Include="Content\Images\Student Dashboard\welcome board final.png" />
     <Content Include="Content\Images\Student Profile\student profile final.png" />

@@ -38,7 +38,7 @@ namespace TeamProject.Controllers
         /// Students, the page that shows all the Students
         /// </summary>
         /// <returns></returns>
-        // GET: Students
+        // GET: Admin/Students
         public ActionResult Students()
         {
             // Load the list of data into the StudentList
