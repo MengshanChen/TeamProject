@@ -51,17 +51,22 @@ namespace TeamProject.Models
         public string PictureId { get; set; }
 
         /// <summary>
+        /// The status of the student, for example currently logged in, out
+        /// </summary>
+        [Display(Name = "Current Status", Description = "Status of the Student")]
+        [Required(ErrorMessage = "Status is required")]
+        public StudentStatusEnum Status { get; set; }
+
+        /// <summary>
         /// DateTime of last transaction recorded, used for login and logout
         /// </summary>
         [Display(Name = "Date", Description = "Date and Time")]
         public DateTime LastDateTime { get; set; }
 
         /// <summary>
-        /// The status of the student, for example currently logged in, out
+        /// The Attendance list for the student
         /// </summary>
-        [Display(Name = "Current Status", Description = "Status of the Student")]
-        [Required(ErrorMessage = "Status is required")]
-        public StudentStatusEnum Status { get; set; }
+        public List<AttendanceModel> Attendance{ get; set; }
 
         /// <summary>
         /// The defaults for a new student
@@ -71,6 +76,7 @@ namespace TeamProject.Models
             Id = Guid.NewGuid().ToString();
             Email = "N/A";
             Status = StudentStatusEnum.Out;
+            Attendance = new List<AttendanceModel>();
         }
 
         /// <summary>
@@ -125,6 +131,7 @@ namespace TeamProject.Models
             Email = data.Email;
             PictureId = data.PictureId;
             Status = data.Status;
+            Attendance = data.Attendance;
         }
 
         /// <summary>
@@ -144,6 +151,7 @@ namespace TeamProject.Models
             Email = data.Email;
             PictureId = data.PictureId;
             Status = data.Status;
+            Attendance = data.Attendance;
 
             return true;
         }
@@ -171,13 +179,18 @@ namespace TeamProject.Models
         /// <param name="data">The Student Model to create</param>
         public StudentDisplayViewModel(StudentModel data)
         {
+            if (data == null)
+            {
+                // Nothing to convert
+                return;
+            }
             Id = data.Id;
             Name = data.Name;
             LastName = data.LastName;
             Email = data.Email;
             PictureId = data.PictureId;
             Status = data.Status;
-
+            Attendance = data.Attendance;
             var myPicture = PictureBackend.Instance.Read(PictureId);
             if (myPicture == null)
             {

@@ -156,7 +156,14 @@ namespace TeamProject.Backend
 
             data.Status = StudentStatusEnum.In;
 
-            // TODO:  Make call to the Attendance Log, to track when the student logged In.
+            // Update the Attendance Log, to track when the student logged out.
+            var Temp = new AttendanceModel
+            {
+                In = DateTime.UtcNow,
+                Status = data.Status
+            };
+
+            data.Attendance.Add(Temp);
 
         }
 
@@ -173,7 +180,21 @@ namespace TeamProject.Backend
 
             data.Status = StudentStatusEnum.Out;
 
-            // TODO:  Make call to the Attendance Log, to track when the student logged out.
+            var myTimeData = data.Attendance.OrderByDescending(m => m.In).FirstOrDefault();
+            if (myTimeData == null)
+            {
+                return;
+            }
+
+            // Remove the old item from the list
+            data.Attendance.Remove(myTimeData);
+
+            // Add the new one it with the new data
+            myTimeData.Out = DateTime.UtcNow;
+            myTimeData.Status = data.Status;
+            myTimeData.Duration = myTimeData.Out.Subtract(myTimeData.In);
+
+            data.Attendance.Add(myTimeData);
         }
 
         /// <summary>

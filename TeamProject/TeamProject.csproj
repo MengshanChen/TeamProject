@@ -184,6 +184,7 @@
     <Compile Include="Models\StudentPictureModel.cs" />
     <Compile Include="Models\StudentViewModel.cs" />
     <Compile Include="Models\SystemGlobals.cs" />
+    <Compile Include="Models\AttendanceModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
