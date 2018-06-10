@@ -258,8 +258,11 @@
     <Content Include="Content\Images\dashboard pic2.png" />
     <Content Include="Content\Images\WorldTour\expert.png" />
     <Content Include="Content\Images\game page.jpg" />
+    <Content Include="Content\Images\WorldTour\high end new.png" />
     <Content Include="Content\Images\WorldTour\junior.png" />
     <Content Include="Content\Images\prize tomb with text - 2.png" />
+    <Content Include="Content\Images\WorldTour\low end new.png" />
+    <Content Include="Content\Images\WorldTour\mid end new.png" />
     <Content Include="Content\Images\WorldTour\senior.png" />
     <Content Include="Content\Images\Zoser pyramid.png" />
     <Content Include="Content\Pages\Admin Profile.png" />
